@@ -16,5 +16,10 @@ namespace Gestion_de_alumnos
         {
             InitializeComponent();
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

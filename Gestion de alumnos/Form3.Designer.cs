@@ -241,6 +241,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form3";
             this.TransparencyKey = System.Drawing.Color.Snow;
+            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
