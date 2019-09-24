@@ -40,5 +40,12 @@ namespace Gestion_de_alumnos
         {
 
         }
+
+        private void Button2_Click( object sender, EventArgs e )
+        {
+            Form4 frm = new Form4();
+            this.Hide();
+            frm.Show();
+        }
     }
 }
