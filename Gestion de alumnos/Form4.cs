@@ -31,5 +31,9 @@ namespace Gestion_de_alumnos
         {
 
         }
+            private System.Data.DataTable TablaAlumnos= new DataTable("TablaAlumnos");
+    
     }
-}
+    }
+    
+
