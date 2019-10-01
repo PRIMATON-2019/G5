@@ -21,5 +21,25 @@ namespace Gestion_de_alumnos
         {
 
         }
+
+        private void Button2_Click( object sender, EventArgs e )
+        {
+            this.Hide();
+            FormInc frm = new FormInc();
+            frm.Show();
+        }
+
+        private void Button3_Click( object sender, EventArgs e )
+        {
+            Class1 Alumnos = new Class1();
+            if (Alumnos.AgregarAlumno(textBox1.Text, dateTimePicker1.Value, Convert.ToInt32(textBox3.Text), Convert.ToInt32(textBox4.Text), textBox5.Text, textBox6.Text, Convert.ToInt32(textBox7.Text), textBox8.Text, Convert.ToInt32(textBox9.Text), textBox10.Text) == true)
+            {
+                MessageBox.Show("Se a guardado correctamente");
+            }
+            else
+            {
+                MessageBox.Show("A ocurrido un error y no se guardaron los datos");
+            }
+        }
     }
 }
