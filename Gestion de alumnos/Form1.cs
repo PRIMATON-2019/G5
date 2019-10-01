@@ -14,7 +14,12 @@ namespace Gestion_de_alumnos
     {
         public Form1()
         {
-            InitializeComponent();
+           
+                InitializeComponent();
+
+               
+
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -34,6 +39,16 @@ namespace Gestion_de_alumnos
         }
 
         private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }

@@ -8,12 +8,15 @@ namespace Gestion_de_alumnos
 {
     public class Class1
     {
-        string Json;
+        string Xml;
         public bool AgregarAlumno(String NombreyApellido, DateTime FechaDeNacimiento, int Edad, int Dni, String Domicilio, String Localidad, int Telefono, String EMail, int TelefonoFijo, String Sexo)
         {
             bool Valor = false;
 
             return Valor;
         }
+     
+
+
     }
 }
