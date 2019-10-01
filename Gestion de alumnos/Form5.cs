@@ -12,19 +12,21 @@ namespace Gestion_de_alumnos
 {
     public partial class Form5 : Form
     {
+        private System.Data.DataTable TablaAlumnos = new DataTable("TablaAlumnos");
+        private const string Name = @"Base de Datos.xml";
         public Form5()
         {
             InitializeComponent();
+            Precarga();
         }
-
-        private void Form4_Load( object sender, EventArgs e )
+        public void Precarga()
         {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            if (System.IO.File.Exists(Name))
+            {
+                TablaAlumnos.ReadXml(Name);
+            }
+            TablaAlumnos.Columns.Add("Nombre");
+            TablaAlumnos.Columns.Add("DNI");
         }
     }
 }
