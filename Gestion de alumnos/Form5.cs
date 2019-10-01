@@ -12,7 +12,7 @@ namespace Gestion_de_alumnos
 {
     public partial class Form5 : Form
     {
-        private System.Data.DataTable TablaAlumnos = new DataTable("TablaAlumnos");
+        public System.Data.DataTable TablaAlumnos = new DataTable("TablaAlumnos");
         private const string Name = @"Base de Datos.xml";
         public Form5()
         {
@@ -27,6 +27,11 @@ namespace Gestion_de_alumnos
             }
             TablaAlumnos.Columns.Add("Nombre");
             TablaAlumnos.Columns.Add("DNI");
+        }
+
+        private void Button1_Click( object sender, EventArgs e )
+        {
+            TablaAlumnos.WriteXml(Name);
         }
     }
 }

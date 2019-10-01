@@ -32,14 +32,21 @@ namespace Gestion_de_alumnos
         private void Button3_Click( object sender, EventArgs e )
         {
             Class1 Alumnos = new Class1();
-            if (Alumnos.AgregarAlumno(textBox1.Text, dateTimePicker1.Value, Convert.ToInt32(textBox3.Text), Convert.ToInt32(textBox4.Text), textBox5.Text, textBox6.Text, Convert.ToInt32(textBox7.Text), textBox8.Text, Convert.ToInt32(textBox9.Text), textBox10.Text) == true)
+            try
             {
-                MessageBox.Show("Se a guardado correctamente");
+                if (Alumnos.AgregarAlumno(textBox1.Text, dateTimePicker1.Value, Convert.ToInt32(textBox3.Text), Convert.ToInt32(textBox4.Text), textBox5.Text, textBox6.Text, Convert.ToInt32(textBox7.Text), textBox8.Text, Convert.ToInt32(textBox9.Text), textBox10.Text) == true)
+                {
+                    MessageBox.Show("Se a guardado correctamente");
+                }
+                else
+                {
+                    MessageBox.Show("A ocurrido un error y no se guardaron los datos");
+                }
             }
-            else
+            catch (NoNullAllowedException)
             {
-                MessageBox.Show("A ocurrido un error y no se guardaron los datos");
-            }
+                MessageBox.Show("El unico Campo Vacio permitido es 'Telefono Fijo'", caption:"Campo vacio no permitido", MessageBoxButtons.OK);
+            }            
         }
     }
 }
