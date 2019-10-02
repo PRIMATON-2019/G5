@@ -43,7 +43,7 @@ namespace Gestion_de_alumnos
 
         private void Button2_Click( object sender, EventArgs e )
         {
-            Form5 frm = new Form5();
+            Form6 frm = new Form6();
             this.Hide();
             frm.Show();
         }
