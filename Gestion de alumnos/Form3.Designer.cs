@@ -221,6 +221,7 @@
             // dateTimePicker1
             // 
             resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             // 
             // Form3
@@ -258,7 +259,6 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form3";
             this.TransparencyKey = System.Drawing.Color.Snow;
-            this.Load += new System.EventHandler(this.Form3_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
