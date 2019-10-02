@@ -77,11 +77,11 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(438, 562);
+            this.button1.Location = new System.Drawing.Point(443, 562);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 41);
+            this.button1.Size = new System.Drawing.Size(108, 41);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Registro";
+            this.button1.Text = "Inicio";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox2
@@ -157,7 +157,6 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkGreen;
             this.label5.Location = new System.Drawing.Point(843, 612);
@@ -165,7 +164,6 @@
             this.label5.Size = new System.Drawing.Size(47, 15);
             this.label5.TabIndex = 21;
             this.label5.Text = "Iniciar";
-            this.label5.Click += new System.EventHandler(this.Label5_Click);
             // 
             // label6
             // 

@@ -56,5 +56,10 @@ namespace Gestion_de_alumnos
             }
             return Verificar;
         }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
