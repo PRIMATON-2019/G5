@@ -47,5 +47,10 @@ namespace Gestion_de_alumnos
             this.Hide();
             frm.Show();
         }
+
+        private void FormInc_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
