@@ -15,17 +15,20 @@ namespace Gestion_de_alumnos
         public Barra_de_cargacs()
         {
             InitializeComponent();
+            timer1.Start();
         }
 
         private void Barra_de_cargacs_Load(object sender, EventArgs e)
         {
 
         }
-        public void Cargar_Barra()
+       
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
             progressBar1.Increment(1);
 
-            if (progressBar1.Value==progressBar1.Maximum)
+            if (progressBar1.Value == progressBar1.Maximum)
             {
                 timer1.Stop();
                 this.Hide();
@@ -33,11 +36,6 @@ namespace Gestion_de_alumnos
                 frm.Show();
 
             }
-
-
         }
-                    
-
-
     }
 }

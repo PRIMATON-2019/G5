@@ -44,6 +44,7 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 60;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Barra_de_cargacs
             // 
