@@ -40,7 +40,10 @@ namespace Gestion_de_alumnos
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Barra_de_cargacs frm = new Barra_de_cargacs();
+            frm.Show();
+            
         }
     }
 }

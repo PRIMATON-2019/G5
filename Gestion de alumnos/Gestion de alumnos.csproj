@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barra de cargacs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Barra de cargacs.Designer.cs">
+      <DependentUpon>Barra de cargacs.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -90,6 +96,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tabla de login.cs" />
+    <EmbeddedResource Include="Barra de cargacs.resx">
+      <DependentUpon>Barra de cargacs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
