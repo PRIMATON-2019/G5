@@ -26,5 +26,10 @@ namespace Gestion_de_alumnos
         {
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
