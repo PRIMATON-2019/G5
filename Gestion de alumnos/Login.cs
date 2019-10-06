@@ -51,5 +51,10 @@ namespace Gestion_de_alumnos
                   MessageBox.Show("Datos incorrectos");
 
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
