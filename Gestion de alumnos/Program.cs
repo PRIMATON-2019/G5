@@ -16,7 +16,7 @@ namespace Gestion_de_alumnos
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormInc());
+            Application.Run(new Login());
         }
     }
 }

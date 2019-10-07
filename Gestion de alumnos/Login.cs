@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Gestion_de_alumnos
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -40,7 +40,21 @@ namespace Gestion_de_alumnos
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            String usuario = "admin";
+            String password = "123456";
+            if ((textBox1.Text== usuario) && textBox2.Text == password) { 
+            this.Hide();
+            Barra_de_cargacs frm = new Barra_de_cargacs();
+            frm.Show();
+            }
+            else
+                  MessageBox.Show("Datos incorrectos");
 
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
