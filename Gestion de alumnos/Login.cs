@@ -16,28 +16,6 @@ namespace Gestion_de_alumnos
         {
             InitializeComponent();
         }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
             String usuario = "admin";
@@ -55,6 +33,13 @@ namespace Gestion_de_alumnos
         private void button2_Click_1(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Label4_MouseClick( object sender, MouseEventArgs e )
+        {
+            Form6 frm = new Form6();
+            this.Hide();
+            frm.Show();
         }
     }
 }

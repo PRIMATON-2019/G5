@@ -55,7 +55,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Barra_de_cargacs";
             this.Text = " ";
-            this.Load += new System.EventHandler(this.Barra_de_cargacs_Load);
             this.ResumeLayout(false);
 
         }

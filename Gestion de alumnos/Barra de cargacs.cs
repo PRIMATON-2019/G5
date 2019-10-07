@@ -16,13 +16,7 @@ namespace Gestion_de_alumnos
         {
             InitializeComponent();
             timer1.Start();
-        }
-
-        private void Barra_de_cargacs_Load(object sender, EventArgs e)
-        {
-
-        }
-       
+        }      
 
         private void timer1_Tick(object sender, EventArgs e)
         {

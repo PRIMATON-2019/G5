@@ -17,19 +17,11 @@ namespace Gestion_de_alumnos
             InitializeComponent();
         }
 
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        private void Label5_MouseClick( object sender, MouseEventArgs e )
         {
-
-        }
-
-        private void Form6_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
+            Login frm = new Login();
+            this.Hide();
+            frm.Show();
         }
     }
 }

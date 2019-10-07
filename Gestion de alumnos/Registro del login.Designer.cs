@@ -44,7 +44,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,7 +83,6 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Inicio";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // textBox2
             // 
@@ -166,6 +164,7 @@
             this.label5.Size = new System.Drawing.Size(47, 15);
             this.label5.TabIndex = 21;
             this.label5.Text = "Iniciar";
+            this.label5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label5_MouseClick);
             // 
             // label6
             // 
@@ -223,22 +222,12 @@
             this.textBox3.Size = new System.Drawing.Size(232, 10);
             this.textBox3.TabIndex = 25;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(722, 207);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(35, 13);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "label9";
-            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(932, 676);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -256,7 +245,6 @@
             this.Controls.Add(this.textBox3);
             this.Name = "Form6";
             this.Text = "Form6";
-            this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -280,6 +268,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label9;
     }
 }
