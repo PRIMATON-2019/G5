@@ -95,7 +95,7 @@ namespace Gestion_de_alumnos
         {
             InitializeComponent();
             ConfiguracionInicial();
-            Tablausuarios = tabla
+            
         }
 
         private void Button2_Click(object sender, EventArgs e)
