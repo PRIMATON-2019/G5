@@ -56,5 +56,10 @@ namespace Gestion_de_alumnos
         {
             this.Close();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
