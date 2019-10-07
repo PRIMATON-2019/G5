@@ -20,7 +20,7 @@ namespace Gestion_de_alumnos
         /// <summary>
         /// Path y nombre del archivo
         /// </summary>
-        private const string NombreArchivo = @"usuarios.xml";
+        private const string NombreArchivo = @"usuario.xml";
 
 
         /// <summary>
@@ -54,11 +54,11 @@ namespace Gestion_de_alumnos
 
 
 
-        private void BtGrabar_Click(object sender, EventArgs e)
+        public void Grabar()
         {
             Tablausuarios.WriteXml(NombreArchivo);
         }
-           
+
 
         #region METODOS
 
@@ -74,15 +74,14 @@ namespace Gestion_de_alumnos
             Tablausuarios.Columns.Add("Contraseña");
             Tablausuarios.Columns.Add("DNI");
             Tablausuarios.Columns.Add("Edad");
-
+            Tablausuarios.Rows.Add();
+            Tablausuarios.Rows.Add();
+            Tablausuarios.Rows.Add();
             // busca si el archivo ya existe para precargar sus datos
             if (System.IO.File.Exists(NombreArchivo))
             {
                 Tablausuarios.ReadXml(NombreArchivo);
             }
-
-           
-         
         }
 
         // Llena con string vacio los texbox
@@ -95,6 +94,8 @@ namespace Gestion_de_alumnos
         public Login()
         {
             InitializeComponent();
+            ConfiguracionInicial();
+            Tablausuarios = tabla
         }
 
         private void Button2_Click(object sender, EventArgs e)
@@ -123,18 +124,24 @@ namespace Gestion_de_alumnos
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-
-
-
-
-
-            if ((textBox1.Text== "Nombre") && textBox2.Text == "Nombre") { 
-            this.Hide();
-            Barra_de_cargacs frm = new Barra_de_cargacs();
-            frm.Show();
+            Tablausuarios.ReadXml(NombreArchivo);
+            for (int i = 0; i < Tablausuarios.Rows.Count; i++)
+            {
+                if (textBox1.Text == Tablausuarios.Rows[i][i].ToString())
+                {
+                    {
+                    }
+             }
+                
+                
             }
-            else
-                  MessageBox.Show("Datos incorrectos");
+            //if ((textBox1.Text== "Nombre") && textBox2.Text == "Nombre") { 
+            //this.Hide();
+            //Barra_de_cargacs frm = new Barra_de_cargacs();
+            //frm.Show();
+            //}
+            //else
+            //      MessageBox.Show("Datos incorrectos");
 
         }
 

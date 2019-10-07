@@ -99,5 +99,17 @@ namespace Gestion_de_alumnos
             }
             return Valor;
         }
+        //public string Buscar(string User)
+        //{
+        //    string H = "";
+        //    for (int i = 0; i < length; i++)
+        //    {
+        //        if (true)
+        //        {
+
+        //        }
+        //    }
+        //    return H;
+        //}
     }
 }

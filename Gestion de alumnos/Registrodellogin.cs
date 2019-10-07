@@ -33,7 +33,7 @@ namespace Gestion_de_alumnos
             ConfiguracionInicial();
 
         }
-
+        #endregion
         private void ConfiguracionInicial()
         {
             // diseño de la TablaPersona
@@ -56,20 +56,6 @@ namespace Gestion_de_alumnos
             elimina el encabezado de las filas
             dgvPersonas.RowHeadersVisible = false;    */
         }
-
-
-        #endregion
-
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-
-        }
-
-        private void Form6_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button1_Click(object sender, EventArgs e)
         {
 
@@ -83,9 +69,6 @@ namespace Gestion_de_alumnos
      MessageBoxIcon.Information);
 
             }
-         
-
-
             /*   if (comboBox1.Text == "alumno")
                {
 
@@ -148,28 +131,15 @@ namespace Gestion_de_alumnos
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["email"] = textemail.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["tipo"] = comboBox1.Text;
 
-
         }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            dgvPersonas.DataSource = TablaPersona;
-
-
-
-
-  
-
-
-
-        }
-
         private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusuario_TextChanged(object sender, EventArgs e)
         {
 
         }
     }
 }
-
-
-
