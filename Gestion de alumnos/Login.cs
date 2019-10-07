@@ -8,10 +8,90 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Gestion_de_alumnos
 {
+    
     public partial class Login : Form
     {
+
+
+        #region PROPIEDADES PRIVADAS
+        /// <summary>
+        /// Path y nombre del archivo
+        /// </summary>
+        private const string NombreArchivo = @"usuarios.xml";
+
+
+        /// <summary>
+        /// Tabla en memoria con la lista de personas
+        /// </summary>
+        private System.Data.DataTable Tablausuarios = new DataTable("TablaPersonas");
+        #endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        private void BtGrabar_Click(object sender, EventArgs e)
+        {
+            Tablausuarios.WriteXml(NombreArchivo);
+        }
+           
+
+        #region METODOS
+
+        /// <summary>
+        /// Diseña columnas del datatable, 
+        /// verifica si el archivo existe previamente
+        /// asigna tabla al DataGridView
+        /// </summary>
+        private void ConfiguracionInicial()
+        {
+            // diseño de la TablaPersona
+            Tablausuarios.Columns.Add("Nombre");
+            Tablausuarios.Columns.Add("Contraseña");
+            Tablausuarios.Columns.Add("DNI");
+            Tablausuarios.Columns.Add("Edad");
+
+            // busca si el archivo ya existe para precargar sus datos
+            if (System.IO.File.Exists(NombreArchivo))
+            {
+                Tablausuarios.ReadXml(NombreArchivo);
+            }
+
+           
+         
+        }
+
+        // Llena con string vacio los texbox
+
+
+
+
+
+
         public Login()
         {
             InitializeComponent();
@@ -35,14 +115,20 @@ namespace Gestion_de_alumnos
 
         private void Label4_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form6 frm = new Form6();
 
+            frm.Show();
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            String usuario = "admin";
-            String password = "123456";
-            if ((textBox1.Text== usuario) && textBox2.Text == password) { 
+
+
+
+
+
+            if ((textBox1.Text== "Nombre") && textBox2.Text == "Nombre") { 
             this.Hide();
             Barra_de_cargacs frm = new Barra_de_cargacs();
             frm.Show();
@@ -58,3 +144,4 @@ namespace Gestion_de_alumnos
         }
     }
 }
+#endregion
