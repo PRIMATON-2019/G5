@@ -31,5 +31,10 @@ namespace Gestion_de_alumnos
 
             }
         }
+
+        private void ProgressBar1_Click( object sender, EventArgs e )
+        {
+
+        }
     }
 }

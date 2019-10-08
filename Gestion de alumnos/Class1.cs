@@ -11,23 +11,21 @@ namespace Gestion_de_alumnos
 {
     public class Class1
     {
-        Form5 frm = new Form5();
-        Form3 frm3 = new Form3();
-        public bool AgregarAlumno(String NombreyApellido, DateTime FechaDeNacimiento, int Edad, int Dni, String Domicilio, String Localidad, int Telefono, String EMail, int TelefonoFijo, String Sexo)
+        Form3 frm = new Form3();
+        public int AgregarAlumno(String NombreyApellido, DateTime FechaDeNacimiento, int Edad, int Dni, String Domicilio, String Localidad, int Telefono, String EMail, int TelefonoFijo, String Sexo)
         {
-            string msg = "";
-            bool Valor = false;
+            int Valor = 0;
             if (NombreyApellido == "")
             {
-                msg = "El campo 'Nombre y Apellido' esta vacio" + "\r\n";
+                Valor++;
             }
             else
             {
                 frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["Nombre"] = NombreyApellido;
             }
-            if (FechaDeNacimiento < Convert.ToDateTime("1/1/1900") && FechaDeNacimiento > Convert.ToDateTime("1/1/2020"))
+            if (FechaDeNacimiento < Convert.ToDateTime("1/1/1900") | FechaDeNacimiento > Convert.ToDateTime("1/1/2020"))
             {
-                msg = msg + "El campo 'Fecha de Nacimiento' esta fuera de los limites" + "\r\n";
+                Valor++;
             }
             else
             {
@@ -35,7 +33,7 @@ namespace Gestion_de_alumnos
             }
             if (Edad == 0)
             {
-                msg = msg + "El campo 'Edad' esta vacio" + "\r\n";
+                Valor++;
             }
             else
             {
@@ -43,7 +41,7 @@ namespace Gestion_de_alumnos
             }
             if (Dni == 0)
             {
-                msg = msg + "El campo 'Dni' esta vacio" + "\r\n";
+                Valor++;
             }
             else
             {
@@ -51,7 +49,7 @@ namespace Gestion_de_alumnos
             }
             if (Domicilio == "")
             {
-                msg = msg + "El campo 'Domicilio' esta vacio" + "\r\n";
+                Valor++;
             }
             else
             {
@@ -59,7 +57,7 @@ namespace Gestion_de_alumnos
             }
             if (Localidad == "")
             {
-                msg = msg + "El campo 'Localidad' esta vacio" + "\r\n";
+                Valor++;
             }
             else
             {
@@ -67,7 +65,7 @@ namespace Gestion_de_alumnos
             }
             if (Telefono == 0)
             {
-                msg = msg + "El campo 'Telefono' esta vacio" + "\r\n";
+                Valor++;
             }
             else
             {
@@ -75,23 +73,15 @@ namespace Gestion_de_alumnos
             }
             if (EMail == "")
             {
-                msg = msg + "El campo 'E-mail' esta vacio" + "\r\n";
+                Valor++;
             }
             else
             {
                 frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["E-Mail"] = EMail;
-            }
-            if (TelefonoFijo == 0)
-            {
-                msg = msg + "El campo 'TelfonoFijo' esta vacio" + "\r\n";
-            }
-            else
-            {
-                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["Fijo"] = TelefonoFijo;
-            }
+            }            
             if (Sexo == "")
             {
-                msg = msg + "El campo 'Sexo' esta vacio" + "\r\n";
+                Valor++;
             }
             else
             {
@@ -99,17 +89,5 @@ namespace Gestion_de_alumnos
             }
             return Valor;
         }
-        //public string Buscar(string User)
-        //{
-        //    string H = "";
-        //    for (int i = 0; i < length; i++)
-        //    {
-        //        if (true)
-        //        {
-
-        //        }
-        //    }
-        //    return H;
-        //}
     }
 }

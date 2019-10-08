@@ -60,10 +60,7 @@ namespace Gestion_de_alumnos
         {
             if (comboBox1.Text == "")
             {
-                MessageBox.Show("tipo no espesificado.",
- "Presione ok para redirigir", MessageBoxButtons.OK,
-     MessageBoxIcon.Information);
-
+                MessageBox.Show("tipo no espesificado.","Presione ok para redirigir", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             /*   if (comboBox1.Text == "alumno")
                {
@@ -98,6 +95,10 @@ namespace Gestion_de_alumnos
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["contraseña"] = textcontraseña.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["email"] = textemail.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["tipo"] = comboBox1.Text;
+        }
+
+        private void Form6_Load( object sender, EventArgs e )
+        {
 
         }
     }
