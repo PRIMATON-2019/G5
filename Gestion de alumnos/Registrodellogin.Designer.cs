@@ -165,7 +165,6 @@
             this.label5.Size = new System.Drawing.Size(47, 15);
             this.label5.TabIndex = 21;
             this.label5.Text = "Iniciar";
-            this.label5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label5_MouseClick);
             // 
             // label6
             // 

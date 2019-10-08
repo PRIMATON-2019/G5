@@ -154,6 +154,18 @@ namespace Gestion_de_alumnos
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void TextBox1_TextChanged( object sender, EventArgs e )
+        {
+
+        }
+
+        private void Label4_MouseClick( object sender, MouseEventArgs e )
+        {
+            Form6 frm = new Form6();
+            this.Hide();
+            frm.Show();
+        }
     }
 }
 #endregion
