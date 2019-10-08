@@ -14,8 +14,6 @@ namespace Gestion_de_alumnos
     
     public partial class Login : Form
     {
-
-
         #region PROPIEDADES PRIVADAS
         /// <summary>
         /// Path y nombre del archivo
@@ -28,38 +26,6 @@ namespace Gestion_de_alumnos
         /// </summary>
         private System.Data.DataTable Tablausuarios = new DataTable("TablaPersonas");
         #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public void Grabar()
-        {
-            Tablausuarios.WriteXml(NombreArchivo);
-        }
-
-
         #region METODOS
 
         /// <summary>
@@ -97,44 +63,23 @@ namespace Gestion_de_alumnos
             ConfiguracionInicial();
             
         }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form6 frm = new Form6();
-
-            frm.Show();
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Tablausuarios.ReadXml(NombreArchivo);
-            for (int i = 0; i < Tablausuarios.Rows.Count; i++)
+            Form6 frm = new Form6();
+            frm.TablaPersona.ReadXml(NombreArchivo);
+            for (int i = 0; i < frm.TablaPersona.Rows.Count; i++)
             {
-                if (textBox1.Text == Tablausuarios.Rows[i][i].ToString())
+                if (textBox1.Text == frm.TablaPersona.Rows[i][i].ToString() && textBox2.Text == frm.TablaPersona.Rows[i][i].ToString())
                 {
-                    {
-                    }
-             }
-                
-                
+                    MessageBox.Show("Bienvenido ", caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+
+                }
+                else
+                {
+                    MessageBox.Show("Datos Incorrectos",caption:"Error de inicio de sesion",MessageBoxButtons.OK);
+                }
             }
+            
             //if ((textBox1.Text== "Nombre") && textBox2.Text == "Nombre") { 
             //this.Hide();
             //Barra_de_cargacs frm = new Barra_de_cargacs();
@@ -154,12 +99,6 @@ namespace Gestion_de_alumnos
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
-        private void TextBox1_TextChanged( object sender, EventArgs e )
-        {
-
-        }
-
         private void Label4_MouseClick( object sender, MouseEventArgs e )
         {
             Form6 frm = new Form6();
