@@ -119,5 +119,31 @@ namespace Gestion_de_alumnos.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a &lt;?xml version=&quot;1.0&quot; standalone=&quot;yes&quot;?&gt;
+        ///&lt;DocumentElement&gt;
+        ///  &lt;TablaPersonas&gt;
+        ///    &lt;usuario&gt;fdgfcfgcdfgdg&lt;/usuario&gt;
+        ///    &lt;contraseña&gt;hghjghghj&lt;/contraseña&gt;
+        ///    &lt;email&gt;hgf hfgf&lt;/email&gt;
+        ///  &lt;/TablaPersonas&gt;
+        ///  &lt;TablaPersonas&gt;
+        ///    &lt;usuario&gt;fdgfcfgcdfgdg&lt;/usuario&gt;
+        ///    &lt;contraseña&gt;hghjghghj&lt;/contraseña&gt;
+        ///    &lt;email&gt;hgf hfgf&lt;/email&gt;
+        ///  &lt;/TablaPersonas&gt;
+        ///  &lt;TablaPersonas&gt;
+        ///    &lt;usuario&gt;fdgfcfgcdfgdg&lt;/usuario&gt;
+        ///    &lt;contraseña&gt;hghjghghj&lt;/contraseña&gt;
+        ///    &lt;email&gt;hgf hfgf&lt;/email&gt;
+        ///  &lt;/TablaPersonas&gt;
+        ///  &lt;TablaPersona [resto de la cadena truncado]&quot;;.
+        /// </summary>
+        internal static string usuario {
+            get {
+                return ResourceManager.GetString("usuario", resourceCulture);
+            }
+        }
     }
 }

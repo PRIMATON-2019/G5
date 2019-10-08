@@ -32,12 +32,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textcontraseña = new System.Windows.Forms.TextBox();
+            this.txtusuario = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textemail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -79,33 +79,34 @@
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button1.Location = new System.Drawing.Point(443, 562);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(108, 41);
+            this.button1.Size = new System.Drawing.Size(123, 41);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Inicio";
+            this.button1.Text = "Registro";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // textcontraseña
             // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox2.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textBox2.Location = new System.Drawing.Point(393, 383);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(232, 35);
-            this.textBox2.TabIndex = 11;
+            this.textcontraseña.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textcontraseña.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
+            this.textcontraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textcontraseña.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.textcontraseña.Location = new System.Drawing.Point(393, 383);
+            this.textcontraseña.Multiline = true;
+            this.textcontraseña.Name = "textcontraseña";
+            this.textcontraseña.PasswordChar = '*';
+            this.textcontraseña.Size = new System.Drawing.Size(232, 35);
+            this.textcontraseña.TabIndex = 11;
             // 
-            // textBox1
+            // txtusuario
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textBox1.Location = new System.Drawing.Point(393, 320);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 35);
-            this.textBox1.TabIndex = 10;
+            this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtusuario.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.txtusuario.Location = new System.Drawing.Point(393, 320);
+            this.txtusuario.Multiline = true;
+            this.txtusuario.Name = "txtusuario";
+            this.txtusuario.Size = new System.Drawing.Size(232, 35);
+            this.txtusuario.TabIndex = 10;
+            this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
             // 
             // pictureBox2
             // 
@@ -143,15 +144,15 @@
             this.label4.TabIndex = 18;
             this.label4.Text = "Email";
             // 
-            // textBox4
+            // textemail
             // 
-            this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textBox4.Location = new System.Drawing.Point(393, 439);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(232, 35);
-            this.textBox4.TabIndex = 16;
+            this.textemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.textemail.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.textemail.Location = new System.Drawing.Point(393, 439);
+            this.textemail.Multiline = true;
+            this.textemail.Name = "textemail";
+            this.textemail.Size = new System.Drawing.Size(232, 35);
+            this.textemail.TabIndex = 16;
             // 
             // label5
             // 
@@ -235,13 +236,13 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textemail);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textcontraseña);
+            this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.textBox3);
             this.Name = "Form6";
             this.Text = "Form6";
@@ -257,11 +258,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textcontraseña;
+        private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textemail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
