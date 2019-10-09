@@ -14,52 +14,18 @@ namespace Gestion_de_alumnos
     
     public partial class Login : Form
     {
-
-
         #region PROPIEDADES PRIVADAS
         /// <summary>
         /// Path y nombre del archivo
         /// </summary>
         private const string NombreArchivo = @"usuario.xml";
-
+        Form6 frm = new Form6();
 
         /// <summary>
         /// Tabla en memoria con la lista de personas
         /// </summary>
         private System.Data.DataTable Tablausuarios = new DataTable("TablaPersonas");
         #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public void Grabar()
-        {
-            Tablausuarios.WriteXml(NombreArchivo);
-        }
-
-
         #region METODOS
 
         /// <summary>
@@ -70,17 +36,17 @@ namespace Gestion_de_alumnos
         private void ConfiguracionInicial()
         {
             // diseño de la TablaPersona
-            Tablausuarios.Columns.Add("Nombre");
-            Tablausuarios.Columns.Add("Contraseña");
-            Tablausuarios.Columns.Add("DNI");
-            Tablausuarios.Columns.Add("Edad");
-            Tablausuarios.Rows.Add();
-            Tablausuarios.Rows.Add();
-            Tablausuarios.Rows.Add();
+            frm.TablaPersona.Columns.Add("Nombre");
+            frm.TablaPersona.Columns.Add("Contraseña");
+            frm.TablaPersona.Columns.Add("DNI");
+            frm.TablaPersona.Columns.Add("Edad");
+            frm.TablaPersona.Rows.Add();
+            frm.TablaPersona.Rows.Add();
+            frm.TablaPersona.Rows.Add();
             // busca si el archivo ya existe para precargar sus datos
             if (System.IO.File.Exists(NombreArchivo))
             {
-                Tablausuarios.ReadXml(NombreArchivo);
+                frm.TablaPersona.ReadXml(NombreArchivo);
             }
         }
 
@@ -97,44 +63,25 @@ namespace Gestion_de_alumnos
             ConfiguracionInicial();
             
         }
-
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Form6 frm = new Form6();
-
-            frm.Show();
-        }
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Tablausuarios.ReadXml(NombreArchivo);
-            for (int i = 0; i < Tablausuarios.Rows.Count; i++)
+            frm.TablaPersona.ReadXml(NombreArchivo);
+            for (int i = 0; i < frm.TablaPersona.Rows.Count; i++)
             {
-                if (textBox1.Text == Tablausuarios.Rows[i][i].ToString())
+                if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox2.Text == frm.TablaPersona.Rows[i][1].ToString())
                 {
-                    {
-                    }
-             }
-                
-                
+                    MessageBox.Show("Bienvenido ", caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+                    Barra_de_cargacs frm2 = new Barra_de_cargacs();
+                    this.Hide();
+                    frm2.Show();
+                    break;
+                }
+                else
+                {
+                    MessageBox.Show("Datos Incorrectos",caption:"Error de inicio de sesion",MessageBoxButtons.OK);
+                }
             }
+            
             //if ((textBox1.Text== "Nombre") && textBox2.Text == "Nombre") { 
             //this.Hide();
             //Barra_de_cargacs frm = new Barra_de_cargacs();
@@ -153,6 +100,12 @@ namespace Gestion_de_alumnos
         private void button3_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+        private void Label4_MouseClick( object sender, MouseEventArgs e )
+        {
+            Form6 frm = new Form6();
+            this.Hide();
+            frm.Show();
         }
     }
 }

@@ -83,7 +83,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "Registro";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
             // textcontraseña
             // 
@@ -107,7 +107,6 @@
             this.txtusuario.Name = "txtusuario";
             this.txtusuario.Size = new System.Drawing.Size(232, 35);
             this.txtusuario.TabIndex = 10;
-            this.txtusuario.TextChanged += new System.EventHandler(this.txtusuario_TextChanged);
             // 
             // pictureBox2
             // 
@@ -246,6 +245,7 @@
             this.Controls.Add(this.textBox3);
             this.Name = "Form6";
             this.Text = "Form6";
+            this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

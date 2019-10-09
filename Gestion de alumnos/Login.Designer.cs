@@ -161,7 +161,7 @@
             this.label4.Size = new System.Drawing.Size(66, 15);
             this.label4.TabIndex = 11;
             this.label4.Text = "Registrar";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
+            this.label4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label4_MouseClick);
             // 
             // label5
             // 
@@ -234,7 +234,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);

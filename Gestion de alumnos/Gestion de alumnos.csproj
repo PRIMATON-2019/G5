@@ -89,11 +89,11 @@
     <Compile Include="Ver perfil de alumnos.Designer.cs">
       <DependentUpon>Ver perfil de alumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="Tomar Lista.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.Designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="Tomar Lista.Designer.cs">
+      <DependentUpon>Tomar Lista.cs</DependentUpon>
     </Compile>
     <Compile Include="Registrodellogin.cs">
       <SubType>Form</SubType>
@@ -119,8 +119,8 @@
     <EmbeddedResource Include="Ver perfil de alumnos.resx">
       <DependentUpon>Ver perfil de alumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="Tomar Lista.resx">
+      <DependentUpon>Tomar Lista.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registrodellogin.resx">
       <DependentUpon>Registrodellogin.cs</DependentUpon>

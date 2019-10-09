@@ -22,7 +22,7 @@ namespace Gestion_de_alumnos
         /// <summary>
         /// Tabla en memoria con la lista de personas
         /// </summary>
-        private System.Data.DataTable TablaPersona = new DataTable("TablaPersonas");
+        public System.Data.DataTable TablaPersona = new DataTable("TablaPersonas");
         #endregion
 
         #region CONSTRUCTOR
@@ -56,18 +56,11 @@ namespace Gestion_de_alumnos
             elimina el encabezado de las filas
             dgvPersonas.RowHeadersVisible = false;    */
         }
-        private void Button1_Click(object sender, EventArgs e)
+        private void Button1_Click_1( object sender, EventArgs e )
         {
-
-
-
-
-            if (comboBox1.Text == "" )
+            if (comboBox1.Text == "")
             {
-                MessageBox.Show("tipo no espesificado.",
- "Presione ok para redirigir", MessageBoxButtons.OK,
-     MessageBoxIcon.Information);
-
+                MessageBox.Show("tipo no espesificado.","Presione ok para redirigir", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             /*   if (comboBox1.Text == "alumno")
                {
@@ -80,64 +73,31 @@ namespace Gestion_de_alumnos
                    textBox1.Text = "profesor";
                }
                */ // Agrega registro nuevo a la tabla
-            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "" )
-               
-
+            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "")
             {
-
-
-
-
-            
                 TablaPersona.Rows.Add();
-
-            LlenaRegistroTabla();
-
-
-
-            txtusuario.Focus();
-
-
-
-
-
-            TablaPersona.WriteXml(NombreArchivo);
-
-
-            MessageBox.Show("Usuario creado con exito.",
-  "Presione ok para redirigir", MessageBoxButtons.OK,
-      MessageBoxIcon.Information);
-            this.Hide();
-
-            Login frm = new Login();
-
-            frm.Show();
-
-
-
+                LlenaRegistroTabla();
+                txtusuario.Focus();
+                TablaPersona.WriteXml(NombreArchivo);
+                MessageBox.Show("Usuario creado con exito.",
+      "Presione ok para redirigir", MessageBoxButtons.OK,
+          MessageBoxIcon.Information);
+                this.Hide();
+                Login frm = new Login();
+                frm.Show();
             }
-
-
-            else MessageBox.Show("Complete todos los campos.",
- "Presione ok para redirigir", MessageBoxButtons.OK,
-     MessageBoxIcon.Information);
+            else MessageBox.Show("Complete todos los campos.","Presione ok para redirigir", MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
-
         private void LlenaRegistroTabla()
         {
-            
+
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["usuario"] = txtusuario.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["contraseña"] = textcontraseña.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["email"] = textemail.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["tipo"] = comboBox1.Text;
-
-        }
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
-        private void txtusuario_TextChanged(object sender, EventArgs e)
+        private void Form6_Load( object sender, EventArgs e )
         {
 
         }
