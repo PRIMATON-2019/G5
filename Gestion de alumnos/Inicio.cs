@@ -18,18 +18,12 @@ namespace Gestion_de_alumnos
             elmenu(); // inicializamos
          
         }
-     
-    
-
     private void elmenu()
         {            // los tres se ocultan para dar el efecto en los paneles
             panelPerfil.Visible = false; // primer panel
         panelacciones.Visible = false; // segundo panel
             panelconfiguracion.Visible = false; // tercer panel
         }
-
-
-
         private void abrirpaneles(Panel abierto) //tipo panel de nombre abierto
         {
             if (abierto.Visible == false) // si no esta visible 
@@ -40,84 +34,28 @@ namespace Gestion_de_alumnos
             else
                 abierto.Visible = false; // peroooo si el si esta abierto se cierra
         }
-
-        private void GroupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Button2_Click( object sender, EventArgs e )
-        {
-          
-        }
-
-        private void FormInc_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Panelmenulateral_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void BtnMedia_Click(object sender, EventArgs e)
         {
             abrirpaneles(panelPerfil);
         }
-
-        private void Button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button4_Click(object sender, EventArgs e)
         {
              abrirpaneles(panelacciones); 
         }
-
         private void Button13_Click(object sender, EventArgs e)
         {
             openChildForm(new Form3());
         }
-
         private void BtnHelp_Click(object sender, EventArgs e)
         {
             abrirpaneles(panelconfiguracion);
         }
-
         private void Button12_Click(object sender, EventArgs e)
         {
             Form5 frm = new Form5();
             this.Hide();
             frm.Show();
         }
-
-        private void Button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox9_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void BtnSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();

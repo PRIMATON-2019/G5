@@ -13,7 +13,6 @@ namespace Gestion_de_alumnos
     public partial class Form3 : Form
     {
         private const string Alumnosxml = @"Alumnos.xml";
-        private const string NombreArchivo = @"usuario.xml";
         public DataTable TablaAlumnos = new DataTable("TablaAlumnos");
         public Form3()
         {
@@ -47,11 +46,10 @@ namespace Gestion_de_alumnos
             {
                 if (Alumnos.AgregarAlumno(textBox1.Text, dateTimePicker1.Value, Convert.ToInt32(textBox3.Text), Convert.ToInt32(textBox4.Text), textBox5.Text, textBox6.Text, Convert.ToInt32(textBox7.Text), textBox8.Text, Convert.ToInt32(textBox9.Text), textBox10.Text) == 0)
                 {
-                    
-                    MessageBox.Show("Se a guardado correctamente");
                     if (System.IO.File.Exists(Alumnosxml))
                     {
                         TablaAlumnos.WriteXml(Alumnosxml);
+                        MessageBox.Show("Se a guardado correctamente");
                     }
                 }
                 else

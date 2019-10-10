@@ -62,17 +62,6 @@ namespace Gestion_de_alumnos
             {
                 MessageBox.Show("tipo no espesificado.","Presione ok para redirigir", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            /*   if (comboBox1.Text == "alumno")
-               {
-
-                   textBox1.Text = "alumno";
-               }
-               else if (comboBox1.Text == "profesor")
-               {
-
-                   textBox1.Text = "profesor";
-               }
-               */ // Agrega registro nuevo a la tabla
             else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "")
             {
                 TablaPersona.Rows.Add();
@@ -95,11 +84,6 @@ namespace Gestion_de_alumnos
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["contraseña"] = textcontraseña.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["email"] = textemail.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["tipo"] = comboBox1.Text;
-        }
-
-        private void Form6_Load( object sender, EventArgs e )
-        {
-
         }
     }
 }

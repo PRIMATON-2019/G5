@@ -79,7 +79,6 @@
             this.panelmenulateral.Name = "panelmenulateral";
             this.panelmenulateral.Size = new System.Drawing.Size(252, 561);
             this.panelmenulateral.TabIndex = 5;
-            this.panelmenulateral.Paint += new System.Windows.Forms.PaintEventHandler(this.Panelmenulateral_Paint);
             // 
             // btnHerramientas
             // 
@@ -335,7 +334,6 @@
             this.button6.Text = "Ver perfil";
             this.button6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // btnMedia
             // 
@@ -431,7 +429,6 @@
             this.MinimumSize = new System.Drawing.Size(950, 600);
             this.Name = "FormInc";
             this.Text = "Incio";
-            this.Load += new System.EventHandler(this.FormInc_Load);
             this.panelmenulateral.ResumeLayout(false);
             this.panelconfiguracion.ResumeLayout(false);
             this.panelacciones.ResumeLayout(false);
