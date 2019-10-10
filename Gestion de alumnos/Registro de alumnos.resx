@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 25</value>
+    <value>474, 6</value>
   </data>
   <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 21</value>
@@ -147,7 +147,7 @@
     <value>Impact, 12pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>455, 26</value>
+    <value>434, 7</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 20</value>
@@ -171,7 +171,7 @@
     <value>22</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 115</value>
+    <value>166, 96</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -192,7 +192,7 @@
     <value>21</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 239</value>
+    <value>162, 220</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -213,7 +213,7 @@
     <value>20</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 297</value>
+    <value>162, 278</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -234,7 +234,7 @@
     <value>19</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 347</value>
+    <value>162, 328</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -255,7 +255,7 @@
     <value>18</value>
   </data>
   <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 118</value>
+    <value>511, 99</value>
   </data>
   <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -276,7 +276,7 @@
     <value>17</value>
   </data>
   <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 176</value>
+    <value>511, 157</value>
   </data>
   <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -297,7 +297,7 @@
     <value>16</value>
   </data>
   <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 232</value>
+    <value>511, 213</value>
   </data>
   <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -318,7 +318,7 @@
     <value>15</value>
   </data>
   <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 294</value>
+    <value>511, 275</value>
   </data>
   <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -339,7 +339,7 @@
     <value>14</value>
   </data>
   <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>532, 345</value>
+    <value>511, 326</value>
   </data>
   <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -366,7 +366,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 118</value>
+    <value>11, 99</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 18</value>
@@ -396,7 +396,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 176</value>
+    <value>11, 157</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 18</value>
@@ -426,7 +426,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 239</value>
+    <value>7, 220</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 18</value>
@@ -456,7 +456,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 347</value>
+    <value>7, 328</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 18</value>
@@ -486,7 +486,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>28, 297</value>
+    <value>7, 278</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 18</value>
@@ -516,7 +516,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 175</value>
+    <value>433, 156</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 18</value>
@@ -546,7 +546,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 116</value>
+    <value>433, 97</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 18</value>
@@ -576,7 +576,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 347</value>
+    <value>435, 328</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 18</value>
@@ -606,7 +606,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 296</value>
+    <value>433, 277</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 18</value>
@@ -636,7 +636,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>454, 234</value>
+    <value>433, 215</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 18</value>
@@ -663,7 +663,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>31, 383</value>
+    <value>10, 364</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
     <value>309, 55</value>
@@ -690,7 +690,7 @@
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>457, 383</value>
+    <value>436, 364</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>236, 55</value>
@@ -714,7 +714,7 @@
     <value>1</value>
   </data>
   <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 176</value>
+    <value>166, 157</value>
   </data>
   <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
@@ -741,7 +741,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>719, 473</value>
+    <value>684, 431</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

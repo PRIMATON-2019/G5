@@ -207,7 +207,7 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Gestion_de_alumnos.Properties.Resources.istockphoto_1007179744_612x612;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
