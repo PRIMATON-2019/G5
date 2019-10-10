@@ -12,16 +12,17 @@ namespace Gestion_de_alumnos
     public class Class1
     {
         Form3 frm = new Form3();
-        public int AgregarAlumno(String NombreyApellido, DateTime FechaDeNacimiento, int Edad, int Dni, String Domicilio, String Localidad, int Telefono, String EMail, int TelefonoFijo, String Sexo)
+        public int AgregarAlumno(String NombreyApellido, DateTime FechaDeNacimiento, Int32 Edad, Int32 Dni, String Domicilio, String Localidad, Int32 Telefono, String EMail, Int32 TelefonoFijo, String Sexo)
         {
             int Valor = 0;
+            frm.TablaAlumnos.Rows.Add();
             if (NombreyApellido == "")
             {
                 Valor++;
             }
             else
             {
-                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["Nombre"] = NombreyApellido;
+                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["Nombre_y_Apellido"] = NombreyApellido;
             }
             if (FechaDeNacimiento < Convert.ToDateTime("1/1/1900") | FechaDeNacimiento > Convert.ToDateTime("1/1/2020"))
             {
@@ -29,7 +30,7 @@ namespace Gestion_de_alumnos
             }
             else
             {
-                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["Fecha de Nacimiento"] = FechaDeNacimiento;
+                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["Fecha_de_Nacimiento"] = FechaDeNacimiento;
             }
             if (Edad == 0)
             {
@@ -45,7 +46,7 @@ namespace Gestion_de_alumnos
             }
             else
             {
-                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["Dni"] = Dni;
+                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["DNI"] = Dni;
             }
             if (Domicilio == "")
             {
@@ -77,7 +78,7 @@ namespace Gestion_de_alumnos
             }
             else
             {
-                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["E-Mail"] = EMail;
+                frm.TablaAlumnos.Rows[frm.TablaAlumnos.Rows.Count - 1]["E_mail"] = EMail;
             }            
             if (Sexo == "")
             {

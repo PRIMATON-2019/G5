@@ -12,6 +12,7 @@ namespace Gestion_de_alumnos
 {
     public partial class Form3 : Form
     {
+        private const string Alumnosxml = @"Alumnos.xml";
         private const string NombreArchivo = @"usuario.xml";
         public DataTable TablaAlumnos = new DataTable("TablaAlumnos");
         public Form3()
@@ -48,6 +49,10 @@ namespace Gestion_de_alumnos
                 {
                     
                     MessageBox.Show("Se a guardado correctamente");
+                    if (System.IO.File.Exists(Alumnosxml))
+                    {
+                        TablaAlumnos.WriteXml(Alumnosxml);
+                    }
                 }
                 else
                 {
