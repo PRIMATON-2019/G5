@@ -74,6 +74,10 @@ namespace Gestion_de_alumnos
             childForm.Show();
         }
 
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            openChildForm(new perfil());
+        }
     }
 
 

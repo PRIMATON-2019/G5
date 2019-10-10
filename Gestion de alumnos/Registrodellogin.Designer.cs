@@ -243,6 +243,7 @@
             this.Controls.Add(this.textcontraseña);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.textBox3);
+            this.MinimumSize = new System.Drawing.Size(948, 715);
             this.Name = "Form6";
             this.Text = "Form6";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
