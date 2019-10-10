@@ -74,6 +74,14 @@ namespace Gestion_de_alumnos
             childForm.Show();
         }
 
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Form4 frm = new Form4();
+
+            frm.Show();
+        }
     }
 
 
