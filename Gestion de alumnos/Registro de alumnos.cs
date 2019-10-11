@@ -12,11 +12,26 @@ namespace Gestion_de_alumnos
 {
     public partial class Form3 : Form
     {
+        private const string Alumnosxml = @"Alumnos.xml";
+        public DataTable TablaAlumnos = new DataTable("TablaAlumnos");
         Class1 AlumnosR = new Class1();
         public Form3()
         {
             InitializeComponent();
-            AlumnosR.ConfiguracionInicial();
+            ConfiguracionInicial();
+        }
+        public void ConfiguracionInicial()
+        {
+            TablaAlumnos.Columns.Add("Nombre_y_Apellido");
+            TablaAlumnos.Columns.Add("Fecha_de_Nacimiento");
+            TablaAlumnos.Columns.Add("Edad");
+            TablaAlumnos.Columns.Add("DNI");
+            TablaAlumnos.Columns.Add("Domicilio");
+            TablaAlumnos.Columns.Add("Localidad");
+            TablaAlumnos.Columns.Add("Telefono");
+            TablaAlumnos.Columns.Add("Telefono_Fijo");
+            TablaAlumnos.Columns.Add("Genero");
+            TablaAlumnos.Columns.Add("E_mail");
         }
         private void Button2_Click( object sender, EventArgs e )
         {
@@ -28,36 +43,26 @@ namespace Gestion_de_alumnos
         private void Button3_Click( object sender, EventArgs e )
         {
             Class1 Alumnos = new Class1();
-            if (VerificarVacios() == true)
+            if (Alumnos.VerificarVacios(textBox1.Text, Convert.ToDateTime(dateTimePicker1.Text), Convert.ToInt32(textBox3.Text), Convert.ToInt32(textBox4.Text), textBox5.Text, textBox6.Text, Convert.ToInt32(textBox7.Text), textBox8.Text, Convert.ToInt32(textBox9.Text), textBox10.Text) == true)
             {
-                if (Alumnos.AgregarAlumno(textBox1.Text, dateTimePicker1.Value, Convert.ToInt32(textBox3.Text), Convert.ToInt32(textBox4.Text), textBox5.Text, textBox6.Text, Convert.ToInt32(textBox7.Text), textBox8.Text, Convert.ToInt32(textBox9.Text), textBox10.Text) == 0)
-                {
-                        MessageBox.Show("Se a guardado correctamente");
-                }
-                else
-                {
-                    MessageBox.Show("A ocurrido un error y no se guardaron los datos");
-                }
-            }                            
-        }
-
-        public bool VerificarVacios()
-        {
-            bool Verificar = false;
-            if (textBox1.Text == "" | textBox3.Text == "" | textBox4.Text == "" | textBox5.Text == "" | textBox6.Text == "" | textBox7.Text == "" | textBox8.Text == "" | textBox10.Text == "")
-            {
-                Verificar = false;
+                TablaAlumnos.Rows.Add();
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["Nombre_y_Apellido"] = textBox1.Text;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["Fecha_de_Nacimiento"] = dateTimePicker1;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["Edad"] = textBox3.Text;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["DNI"] = textBox4.Text;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["Domicilio"] = textBox5.Text;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["Localidad"] = textBox6.Text;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["Telefono"] = textBox7.Text;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["E_mail"] = textBox8.Text;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["Telefono_Fijo"] = textBox9.Text;
+                TablaAlumnos.Rows[TablaAlumnos.Rows.Count - 1]["Genero"] = textBox10.Text;
+                MessageBox.Show("Guardado Exitoso");
+                TablaAlumnos.WriteXml(Alumnosxml);
             }
             else
             {
-                Verificar = true;
+                MessageBox.Show( "El unico campo vacio admitido es 'Telefono Fijo'", caption:"Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-            return Verificar;
-        }
-
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
+        }        
     }
 }

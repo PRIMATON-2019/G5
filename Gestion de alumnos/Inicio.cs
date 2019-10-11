@@ -16,15 +16,15 @@ namespace Gestion_de_alumnos
         {
             InitializeComponent();
             elmenu(); // inicializamos
-         
+
         }
-    private void elmenu()
+        private void elmenu()
         {            // los tres se ocultan para dar el efecto en los paneles
             panelPerfil.Visible = false; // primer panel
-        panelacciones.Visible = false; // segundo panel
+            panelacciones.Visible = false; // segundo panel
             panelconfiguracion.Visible = false; // tercer panel
         }
-        private void abrirpaneles(Panel abierto) //tipo panel de nombre abierto
+        private void abrirpaneles( Panel abierto ) //tipo panel de nombre abierto
         {
             if (abierto.Visible == false) // si no esta visible 
             {
@@ -34,34 +34,34 @@ namespace Gestion_de_alumnos
             else
                 abierto.Visible = false; // peroooo si el si esta abierto se cierra
         }
-        private void BtnMedia_Click(object sender, EventArgs e)
+        private void BtnMedia_Click( object sender, EventArgs e )
         {
             abrirpaneles(panelPerfil);
         }
-        private void Button4_Click(object sender, EventArgs e)
+        private void Button4_Click( object sender, EventArgs e )
         {
-             abrirpaneles(panelacciones); 
+            abrirpaneles(panelacciones);
         }
-        private void Button13_Click(object sender, EventArgs e)
+        private void Button13_Click( object sender, EventArgs e )
         {
             openChildForm(new Form3());
         }
-        private void BtnHelp_Click(object sender, EventArgs e)
+        private void BtnHelp_Click( object sender, EventArgs e )
         {
             abrirpaneles(panelconfiguracion);
         }
-        private void Button12_Click(object sender, EventArgs e)
+        private void Button12_Click( object sender, EventArgs e )
         {
             Form5 frm = new Form5();
             this.Hide();
             frm.Show();
         }
-        private void BtnSalir_Click(object sender, EventArgs e)
+        private void BtnSalir_Click( object sender, EventArgs e )
         {
             Application.Exit();
         }
         private Form activeForm = null;
-        private void openChildForm(Form childForm)
+        private void openChildForm( Form childForm )
         {
             if (activeForm != null) activeForm.Close();
             activeForm = childForm;
@@ -73,22 +73,19 @@ namespace Gestion_de_alumnos
             childForm.BringToFront();
             childForm.Show();
         }
-
-<<<<<<< HEAD
-        private void Button6_Click(object sender, EventArgs e)
+        private void Button6_Click( object sender, EventArgs e )
         {
             openChildForm(new perfil());
-=======
-        private void button10_Click(object sender, EventArgs e)
+        }
+
+        private void Button10_Click( object sender, EventArgs e )
         {
+
             this.Hide();
 
             Form4 frm = new Form4();
 
             frm.Show();
->>>>>>> b360c49073c0d5e3252e72aaea1223cb860f7e79
         }
     }
-
-
 }
