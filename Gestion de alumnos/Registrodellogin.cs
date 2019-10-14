@@ -90,5 +90,39 @@ namespace Gestion_de_alumnos
         {
 
         }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            if (comboBox1.Text == "")
+            {
+                MessageBox.Show("tipo no espesificado.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "")
+            {
+                TablaPersona.Rows.Add();
+                LlenaRegistroTabla();
+                txtusuario.Focus();
+                TablaPersona.WriteXml(NombreArchivo);
+                MessageBox.Show("Usuario creado con exito.",
+      "Presione ok para redirigir", MessageBoxButtons.OK,
+          MessageBoxIcon.Information);
+                this.Hide();
+                Login frm = new Login();
+                frm.Show();
+            }
+            else MessageBox.Show("Complete todos los campos.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+      
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
-}
+    }
