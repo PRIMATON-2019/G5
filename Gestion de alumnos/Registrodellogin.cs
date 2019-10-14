@@ -244,6 +244,13 @@ namespace Gestion_de_alumnos
 
             }
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login frm = new Login();
+            frm.Show();
+        }
     }
    
 }
