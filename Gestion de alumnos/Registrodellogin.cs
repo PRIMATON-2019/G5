@@ -93,11 +93,8 @@ namespace Gestion_de_alumnos
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-            if (comboBox1.Text == "")
-            {
-                MessageBox.Show("tipo no espesificado.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "")
+
+            if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "")
             {
                 TablaPersona.Rows.Add();
                 LlenaRegistroTabla();
@@ -110,9 +107,25 @@ namespace Gestion_de_alumnos
                 Login frm = new Login();
                 frm.Show();
             }
-            else MessageBox.Show("Complete todos los campos.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else if (textemail.Text != "Email" && comboBox1.Text != "" && txtusuario.Text != "Usuario" && textcontraseña.Text != "contraseña")
+            {
+                TablaPersona.Rows.Add();
+                LlenaRegistroTabla();
+                txtusuario.Focus();
+                TablaPersona.WriteXml(NombreArchivo);
+                MessageBox.Show("Usuario creado con exito.",
+      "Presione ok para redirigir", MessageBoxButtons.OK,
+          MessageBoxIcon.Information);
+                this.Hide();
+                Login frm = new Login();
+                frm.Show();
+            }
+           else 
+            {
+                MessageBox.Show("Complete todos los campos.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+          
         }
-
         private void btnminimizar_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
@@ -171,17 +184,17 @@ namespace Gestion_de_alumnos
 
         private void txtemail_Enter(object sender, EventArgs e)
         {
-            if (textcontraseña.Text == "Email")
-                textcontraseña.Text = "";
-            textcontraseña.ForeColor = Color.Silver;
+            if (textemail.Text == "Email")
+                textemail.Text = "";
+            textemail.ForeColor = Color.Silver;
            
         }
 
         private void txtemail_Leave(object sender, EventArgs e)
         {
-            if (textcontraseña.Text == "")
-                textcontraseña.Text = "Email";
-            textcontraseña.ForeColor = Color.Silver;
+            if (textemail.Text == "")
+                textemail.Text = "Email";
+            textemail.ForeColor = Color.Silver;
           
         }
 
