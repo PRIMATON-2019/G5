@@ -66,6 +66,8 @@
             this.textcontraseña.Size = new System.Drawing.Size(352, 35);
             this.textcontraseña.TabIndex = 11;
             this.textcontraseña.Text = "contraseña";
+            this.textcontraseña.Enter += new System.EventHandler(this.txtcontraseña_Enter);
+            this.textcontraseña.Leave += new System.EventHandler(this.txtcontraseña_Leave);
             // 
             // txtusuario
             // 
@@ -79,6 +81,8 @@
             this.txtusuario.Size = new System.Drawing.Size(352, 35);
             this.txtusuario.TabIndex = 10;
             this.txtusuario.Text = "Usuario";
+            this.txtusuario.Enter += new System.EventHandler(this.txtusuario_Enter);
+            this.txtusuario.Leave += new System.EventHandler(this.txtusuario_Leave);
             // 
             // textemail
             // 
@@ -92,6 +96,8 @@
             this.textemail.Size = new System.Drawing.Size(352, 35);
             this.textemail.TabIndex = 16;
             this.textemail.Text = "Email";
+            this.textemail.Enter += new System.EventHandler(this.txtemail_Enter);
+            this.textemail.Leave += new System.EventHandler(this.txtemail_Leave);
             // 
             // label5
             // 
@@ -219,6 +225,7 @@
             this.panel1.Controls.Add(this.btnminimizar);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btncerrar);
+            this.panel1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(460, 0);
             this.panel1.Name = "panel1";
@@ -229,6 +236,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.pictureBox1.Enabled = false;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(68, 49);

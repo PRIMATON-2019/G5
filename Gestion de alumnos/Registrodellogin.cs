@@ -124,5 +124,46 @@ namespace Gestion_de_alumnos
         {
             Application.Exit();
         }
+
+        private void txtusuario_Enter(object sender, EventArgs e)
+        {
+           if (txtusuario.Text == "Usuario")
+            {
+                txtusuario.Text = "";
+                txtusuario.ForeColor = Color.LightGray;
+
+            }
+        }
+
+        private void txtusuario_Leave(object sender, EventArgs e)
+        {
+            if (txtusuario.Text == "")
+            {
+                txtusuario.Text = "Usuario";
+                txtusuario.ForeColor = Color.Silver;
+
+            }
+        }
+
+        private void txtcontraseña_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtcontraseña_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtemail_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtemail_Leave(object sender, EventArgs e)
+        {
+
+        }
     }
-    }
+   
+}
