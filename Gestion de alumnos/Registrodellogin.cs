@@ -147,20 +147,45 @@ namespace Gestion_de_alumnos
 
         private void txtcontraseña_Enter(object sender, EventArgs e)
         {
-
+          
+                if (textcontraseña.Text == "contraseña")
+                {
+                textcontraseña.Text = "";
+                textcontraseña.ForeColor = Color.LightGray;
+                textcontraseña.UseSystemPasswordChar = true;
+                }
         }
+
+       
 
         private void txtcontraseña_Leave(object sender, EventArgs e)
         {
+            {
+                if (textcontraseña.Text == "")
+                    textcontraseña.Text = "contraseña";
+                textcontraseña.ForeColor = Color.Silver;
+                textcontraseña.UseSystemPasswordChar = false;
+            }
 
         }
 
         private void txtemail_Enter(object sender, EventArgs e)
         {
-
+            if (textcontraseña.Text == "Email")
+                textcontraseña.Text = "";
+            textcontraseña.ForeColor = Color.Silver;
+           
         }
 
         private void txtemail_Leave(object sender, EventArgs e)
+        {
+            if (textcontraseña.Text == "")
+                textcontraseña.Text = "Email";
+            textcontraseña.ForeColor = Color.Silver;
+          
+        }
+
+        private void textcontraseña_TextChanged(object sender, EventArgs e)
         {
 
         }

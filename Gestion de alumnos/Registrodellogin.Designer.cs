@@ -43,12 +43,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnlogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnminimizar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,12 +60,13 @@
             this.textcontraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textcontraseña.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.textcontraseña.ForeColor = System.Drawing.Color.Silver;
-            this.textcontraseña.Location = new System.Drawing.Point(33, 79);
+            this.textcontraseña.Location = new System.Drawing.Point(33, 88);
             this.textcontraseña.Multiline = true;
             this.textcontraseña.Name = "textcontraseña";
             this.textcontraseña.Size = new System.Drawing.Size(352, 35);
             this.textcontraseña.TabIndex = 11;
             this.textcontraseña.Text = "contraseña";
+            this.textcontraseña.TextChanged += new System.EventHandler(this.textcontraseña_TextChanged);
             this.textcontraseña.Enter += new System.EventHandler(this.txtcontraseña_Enter);
             this.textcontraseña.Leave += new System.EventHandler(this.txtcontraseña_Leave);
             // 
@@ -90,7 +91,7 @@
             this.textemail.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textemail.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.textemail.ForeColor = System.Drawing.Color.Silver;
-            this.textemail.Location = new System.Drawing.Point(33, 115);
+            this.textemail.Location = new System.Drawing.Point(33, 127);
             this.textemail.Multiline = true;
             this.textemail.Name = "textemail";
             this.textemail.Size = new System.Drawing.Size(352, 35);
@@ -105,7 +106,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Silver;
-            this.label5.Location = new System.Drawing.Point(218, 301);
+            this.label5.Location = new System.Drawing.Point(246, 296);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 15);
             this.label5.TabIndex = 21;
@@ -117,7 +118,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(98, 301);
+            this.label6.Location = new System.Drawing.Point(126, 296);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(125, 15);
             this.label6.TabIndex = 20;
@@ -128,7 +129,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(161, 316);
+            this.label7.Location = new System.Drawing.Point(189, 311);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 13);
             this.label7.TabIndex = 23;
@@ -139,7 +140,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(161, 327);
+            this.label8.Location = new System.Drawing.Point(189, 322);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 13);
             this.label8.TabIndex = 22;
@@ -154,7 +155,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Alumno",
             "Profesor"});
-            this.comboBox1.Location = new System.Drawing.Point(33, 164);
+            this.comboBox1.Location = new System.Drawing.Point(33, 178);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.comboBox1.Size = new System.Drawing.Size(352, 29);
@@ -186,7 +187,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Location = new System.Drawing.Point(30, 96);
+            this.label2.Location = new System.Drawing.Point(30, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(355, 13);
             this.label2.TabIndex = 37;
@@ -197,7 +198,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label3.Location = new System.Drawing.Point(30, 132);
+            this.label3.Location = new System.Drawing.Point(30, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(355, 13);
             this.label3.TabIndex = 38;
@@ -233,6 +234,19 @@
             this.panel1.TabIndex = 40;
             this.panel1.UseWaitCursor = true;
             // 
+            // btnminimizar
+            // 
+            this.btnminimizar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnminimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimizar.Image")));
+            this.btnminimizar.Location = new System.Drawing.Point(278, 3);
+            this.btnminimizar.Name = "btnminimizar";
+            this.btnminimizar.Size = new System.Drawing.Size(15, 15);
+            this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnminimizar.TabIndex = 42;
+            this.btnminimizar.TabStop = false;
+            this.btnminimizar.UseWaitCursor = true;
+            this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -247,21 +261,9 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
             // 
-            // btnminimizar
-            // 
-            this.btnminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnminimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimizar.Image")));
-            this.btnminimizar.Location = new System.Drawing.Point(278, 3);
-            this.btnminimizar.Name = "btnminimizar";
-            this.btnminimizar.Size = new System.Drawing.Size(15, 15);
-            this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnminimizar.TabIndex = 42;
-            this.btnminimizar.TabStop = false;
-            this.btnminimizar.Click += new System.EventHandler(this.btnminimizar_Click);
-            // 
             // btncerrar
             // 
-            this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrar.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
             this.btncerrar.Location = new System.Drawing.Point(299, 3);
             this.btncerrar.Name = "btncerrar";
@@ -269,6 +271,7 @@
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btncerrar.TabIndex = 41;
             this.btncerrar.TabStop = false;
+            this.btncerrar.UseWaitCursor = true;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
             // Form6
@@ -303,8 +306,8 @@
             this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
