@@ -138,12 +138,27 @@ namespace Gestion_de_alumnos
 
                     }
 
-                    break;
+                   
                 }
                 else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString())
                 {
                     MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
                 }
+
+                else if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString())
+                {
+
+                    MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
+
+                }
+                else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text == frm.TablaPersona.Rows[i][1].ToString())
+                {
+
+                    MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
+
+                }
+
+                break;
             }
 
 
@@ -174,6 +189,7 @@ namespace Gestion_de_alumnos
             {
                 textBox3.Text = "Contraseña";
                 textBox3.ForeColor = Color.Silver;
+                textBox3.UseSystemPasswordChar = false;
             }
         }
 
@@ -185,6 +201,7 @@ namespace Gestion_de_alumnos
             {
                 textBox3.Text = "";
                 textBox3.ForeColor = Color.LightGray;
+                textBox3.UseSystemPasswordChar = true;
             }
          
         }
@@ -195,7 +212,18 @@ namespace Gestion_de_alumnos
             {
                 textBox1.Text = "Usuario";
                 textBox1.ForeColor = Color.Silver;
+              
             }
+        }
+
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
     }
