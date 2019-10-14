@@ -230,6 +230,11 @@ namespace Gestion_de_alumnos
         {
 
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 

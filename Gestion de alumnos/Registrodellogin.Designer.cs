@@ -45,8 +45,12 @@
             this.btnlogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnminimizar = new System.Windows.Forms.PictureBox();
+            this.btncerrar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -74,7 +78,7 @@
             this.textcontraseña.Location = new System.Drawing.Point(33, 79);
             this.textcontraseña.Multiline = true;
             this.textcontraseña.Name = "textcontraseña";
-            this.textcontraseña.Size = new System.Drawing.Size(232, 35);
+            this.textcontraseña.Size = new System.Drawing.Size(352, 35);
             this.textcontraseña.TabIndex = 11;
             this.textcontraseña.Text = "contraseña";
             // 
@@ -87,7 +91,7 @@
             this.txtusuario.Location = new System.Drawing.Point(33, 39);
             this.txtusuario.Multiline = true;
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(232, 35);
+            this.txtusuario.Size = new System.Drawing.Size(352, 35);
             this.txtusuario.TabIndex = 10;
             this.txtusuario.Text = "Usuario";
             // 
@@ -100,7 +104,7 @@
             this.textemail.Location = new System.Drawing.Point(33, 115);
             this.textemail.Multiline = true;
             this.textemail.Name = "textemail";
-            this.textemail.Size = new System.Drawing.Size(232, 35);
+            this.textemail.Size = new System.Drawing.Size(352, 35);
             this.textemail.TabIndex = 16;
             this.textemail.Text = "Email";
             // 
@@ -226,7 +230,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.btnminimizar);
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btncerrar);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(444, 0);
             this.panel1.Name = "panel1";
@@ -246,6 +252,28 @@
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.UseWaitCursor = true;
+            // 
+            // btnminimizar
+            // 
+            this.btnminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnminimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimizar.Image")));
+            this.btnminimizar.Location = new System.Drawing.Point(278, 3);
+            this.btnminimizar.Name = "btnminimizar";
+            this.btnminimizar.Size = new System.Drawing.Size(15, 15);
+            this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnminimizar.TabIndex = 42;
+            this.btnminimizar.TabStop = false;
+            // 
+            // btncerrar
+            // 
+            this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
+            this.btncerrar.Location = new System.Drawing.Point(299, 3);
+            this.btncerrar.Name = "btncerrar";
+            this.btncerrar.Size = new System.Drawing.Size(15, 15);
+            this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btncerrar.TabIndex = 41;
+            this.btncerrar.TabStop = false;
             // 
             // Form6
             // 
@@ -268,13 +296,20 @@
             this.Controls.Add(this.textcontraseña);
             this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.textBox3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(780, 330);
             this.Name = "Form6";
             this.Opacity = 0.95D;
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form6";
             this.Load += new System.EventHandler(this.Form6_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -297,5 +332,7 @@
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox btnminimizar;
+        private System.Windows.Forms.PictureBox btncerrar;
     }
 }
