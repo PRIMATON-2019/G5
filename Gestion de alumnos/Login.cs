@@ -36,10 +36,13 @@ namespace Gestion_de_alumnos
         private void ConfiguracionInicial()
         {
             // diseño de la TablaPersona
-            frm.TablaPersona.Columns.Add("Usuario");
+            frm.TablaPersona.Columns.Add("Nombre");
             frm.TablaPersona.Columns.Add("Contraseña");
-            frm.TablaPersona.Columns.Add("Email");
-            frm.TablaPersona.Columns.Add("Tipo");
+            frm.TablaPersona.Columns.Add("DNI");
+            frm.TablaPersona.Columns.Add("Edad");
+            frm.TablaPersona.Rows.Add();
+            frm.TablaPersona.Rows.Add();
+            frm.TablaPersona.Rows.Add();
             // busca si el archivo ya existe para precargar sus datos
             if (System.IO.File.Exists(NombreArchivo))
             {
@@ -60,33 +63,9 @@ namespace Gestion_de_alumnos
             ConfiguracionInicial();
             
         }
-        private void button1_Click_1(object sender, EventArgs e)
+        private void button4_Click_1(object sender, EventArgs e)
         {
-            frm.TablaPersona.ReadXml(NombreArchivo);
-            frm.TablaPersona.Rows.Add();
-            for (int i = 0; i < frm.TablaPersona.Rows.Count; i++)
-            {
-                if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox2.Text == frm.TablaPersona.Rows[i][1].ToString() && comboBox2.Text == frm.TablaPersona.Rows[i][4].ToString())
-                {
-                    MessageBox.Show("Bienvenido ", caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
-                    Barra_de_cargacs frm2 = new Barra_de_cargacs();
-                    this.Hide();
-                    frm2.Show();
-                    break;
-                }
-                else
-                {
-                    MessageBox.Show("Datos Incorrectos",caption:"Error de inicio de sesion",MessageBoxButtons.OK);
-                }
-            }
-            
-            //if ((textBox1.Text== "Nombre") && textBox2.Text == "Nombre") { 
-            //this.Hide();
-            //Barra_de_cargacs frm = new Barra_de_cargacs();
-            //frm.Show();
-            //}
-            //else
-            //      MessageBox.Show("Datos incorrectos");
+          
 
         }
 
@@ -101,10 +80,162 @@ namespace Gestion_de_alumnos
         }
         private void Label4_MouseClick( object sender, MouseEventArgs e )
         {
+        
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            frm.TablaPersona.ReadXml(NombreArchivo);
+
+
+
+
+
+
+            for (int i = 0; i < frm.TablaPersona.Rows.Count; i++)
+            {
+                if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text == frm.TablaPersona.Rows[i][1].ToString())
+                {
+
+                    string alumno = "";
+                    alumno = frm.TablaPersona.Rows[i][3].ToString();
+
+
+                    if (alumno == "Alumno")
+                    {
+
+                        MessageBox.Show("Bienvenido " + textBox1.Text, caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+
+                        FormInc f2 = new FormInc();
+
+                        //pones la instancia y te apareceran los campos que desees mandar 
+                        f2.label1.Text = textBox1.Text;
+                        f2.label2.Text = " Alumno";
+
+                        //muestras el formulario al que se enviaron los datos
+                        this.Hide();
+                        f2.Show();
+                    }
+                    else
+                    {
+
+                        MessageBox.Show("Bienvenido " + textBox1.Text, caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+
+                        FormInc f2 = new FormInc();
+
+                        //pones la instancia y te apareceran los campos que desees mandar 
+                        f2.label1.Text = textBox1.Text;
+                        f2.label2.Text = " Profesor";
+
+                        //muestras el formulario al que se enviaron los datos
+                        this.Hide();
+                        f2.Show();
+
+                    }
+
+                   
+                }
+                else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString())
+                {
+                    MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
+                }
+
+                else if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString())
+                {
+
+                    MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
+
+                }
+                else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text == frm.TablaPersona.Rows[i][1].ToString())
+                {
+
+                    MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
+
+                }
+
+                break;
+            }
+
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
             Form6 frm = new Form6();
             this.Hide();
             frm.Show();
         }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Usuario")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = Color.LightGray;
+            }
+        }
+      
+       
+        
+
+        private void textBox3_Leave(object sender, EventArgs e)
+        {
+            if (textBox3.Text == "")
+            {
+                textBox3.Text = "Contraseña";
+                textBox3.ForeColor = Color.Silver;
+                textBox3.UseSystemPasswordChar = false;
+            }
+        }
+
+        private void textBox3_Enter(object sender, EventArgs e)
+        {
+
+
+            if (textBox3.Text == "Contraseña")
+            {
+                textBox3.Text = "";
+                textBox3.ForeColor = Color.LightGray;
+                textBox3.UseSystemPasswordChar = true;
+            }
+         
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Usuario";
+                textBox1.ForeColor = Color.Silver;
+              
+            }
+        }
+
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-}
+    }
+
 #endregion

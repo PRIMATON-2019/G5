@@ -377,7 +377,7 @@
             // 
             this.Bienvenido.AutoSize = true;
             this.Bienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenido.Location = new System.Drawing.Point(85, 16);
+            this.Bienvenido.Location = new System.Drawing.Point(85, 26);
             this.Bienvenido.Name = "Bienvenido";
             this.Bienvenido.Size = new System.Drawing.Size(86, 16);
             this.Bienvenido.TabIndex = 4;
@@ -387,7 +387,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(166, 16);
+            this.label2.Location = new System.Drawing.Point(166, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 16);
             this.label2.TabIndex = 3;

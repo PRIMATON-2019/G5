@@ -41,7 +41,6 @@ namespace Gestion_de_alumnos
             TablaPersona.Columns.Add("contraseña");
             TablaPersona.Columns.Add("email");
             TablaPersona.Columns.Add("tipo");
-            TablaPersona.Columns.Add("Materia que se dicta");
 
 
             // busca si el archivo ya existe para precargar sus datos
@@ -59,17 +58,19 @@ namespace Gestion_de_alumnos
         }
         private void Button1_Click_1( object sender, EventArgs e )
         {
-            if (comboBox1.Text == "" | comboBox2.Text == "")
+            if (comboBox1.Text == "")
             {
-                MessageBox.Show("Tipo o Materia no valido","Presione ok para continuar", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("tipo no espesificado.","Presione ok para redirigir", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "" && comboBox2.Text != "")
+            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
             {
                 TablaPersona.Rows.Add();
                 LlenaRegistroTabla();
-                txtusuario.Focus();
+                txtusuario1.Focus();
                 TablaPersona.WriteXml(NombreArchivo);
-                MessageBox.Show("Usuario creado con exito.","Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Usuario creado con exito.",
+      "Presione ok para redirigir", MessageBoxButtons.OK,
+          MessageBoxIcon.Information);
                 this.Hide();
                 Login frm = new Login();
                 frm.Show();
@@ -79,11 +80,177 @@ namespace Gestion_de_alumnos
         private void LlenaRegistroTabla()
         {
 
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["usuario"] = txtusuario.Text;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["usuario"] = txtusuario1.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["contraseña"] = textcontraseña.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["email"] = textemail.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["tipo"] = comboBox1.Text;
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Materia que se dicta"] = comboBox2.Text;
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            TablaPersona.ReadXml(NombreArchivo);
+
+
+
+
+
+
+            for (int i = 0; i < TablaPersona.Rows.Count; i++)
+            {
+                if (txtusuario1.Text == TablaPersona.Rows[i][0].ToString())
+                {
+                    MessageBox.Show("Usuario ya existe.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                
+                else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
+                {
+
+                    TablaPersona.Rows.Add();
+                    LlenaRegistroTabla();
+                    txtusuario1.Focus();
+                    TablaPersona.WriteXml(NombreArchivo);
+                    MessageBox.Show("Usuario creado con exito.",
+          "Presione ok para redirigir", MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+                    this.Hide();
+                    Login frm = new Login();
+                    frm.Show();
+
+
+                }
+
+
+               else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
+                {
+                    TablaPersona.Rows.Add();
+                    LlenaRegistroTabla();
+                    txtusuario1.Focus();
+                    TablaPersona.WriteXml(NombreArchivo);
+                    MessageBox.Show("Usuario creado con exito.",
+          "Presione ok para redirigir", MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+                    this.Hide();
+                    Login frm = new Login();
+                    frm.Show();
+                }
+                else if (textemail.Text != "Email" && comboBox1.Text != "" && txtusuario1.Text != "Usuario" && textcontraseña.Text != "contraseña")
+                {
+                    TablaPersona.Rows.Add();
+                    LlenaRegistroTabla();
+                    txtusuario1.Focus();
+                    TablaPersona.WriteXml(NombreArchivo);
+                    MessageBox.Show("Usuario creado con exito.",
+          "Presione ok para redirigir", MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+                    this.Hide();
+                    Login frm = new Login();
+                    frm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Complete todos los campos.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                break;
+            }
+
+                   
+          
+        }
+        private void btnminimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+      
+
+        private void btncerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+       
+
+        private void txtcontraseña_Enter(object sender, EventArgs e)
+        {
+          
+                if (textcontraseña.Text == "contraseña")
+                {
+                textcontraseña.Text = "";
+                textcontraseña.ForeColor = Color.LightGray;
+                textcontraseña.UseSystemPasswordChar = true;
+                }
+        }
+
+       
+
+        private void txtcontraseña_Leave(object sender, EventArgs e)
+        {
+            {
+                if (textcontraseña.Text == "")
+                    textcontraseña.Text = "contraseña";
+                textcontraseña.ForeColor = Color.Silver;
+                textcontraseña.UseSystemPasswordChar = false;
+            }
+
+        }
+
+        private void txtemail_Enter(object sender, EventArgs e)
+        {
+            if (textemail.Text == "Email")
+                textemail.Text = "";
+            textemail.ForeColor = Color.Silver;
+           
+        }
+
+        private void txtemail_Leave(object sender, EventArgs e)
+        {
+            if (textemail.Text == "")
+                textemail.Text = "Email";
+            textemail.ForeColor = Color.Silver;
+          
+        }
+
+        private void textcontraseña_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtusuario1_Enter(object sender, EventArgs e)
+        {
+            if (txtusuario1.Text == "Usuario")
+            {
+                txtusuario1.Text = "";
+                txtusuario1.ForeColor = Color.LightGray;
+
+            }
+        }
+
+       
+           
+
+        private void txtusuario1_Leave(object sender, EventArgs e)
+        {
+            if (txtusuario1.Text == "")
+            {
+                txtusuario1.Text = "Usuario";
+                txtusuario1.ForeColor = Color.Silver;
+
+
+            }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login frm = new Login();
+            frm.Show();
         }
     }
+   
 }
