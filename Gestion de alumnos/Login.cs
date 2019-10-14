@@ -80,9 +80,7 @@ namespace Gestion_de_alumnos
         }
         private void Label4_MouseClick( object sender, MouseEventArgs e )
         {
-            Form6 frm = new Form6();
-            this.Hide();
-            frm.Show();
+        
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -150,6 +148,56 @@ namespace Gestion_de_alumnos
 
 
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            Form6 frm = new Form6();
+            this.Hide();
+            frm.Show();
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "Usuario")
+            {
+                textBox1.Text = "";
+                textBox1.ForeColor = Color.LightGray;
+            }
+        }
+      
+       
+        
+
+        private void textBox3_Leave(object sender, EventArgs e)
+        {
+            if (textBox3.Text == "")
+            {
+                textBox3.Text = "Contraseña";
+                textBox3.ForeColor = Color.Silver;
+            }
+        }
+
+        private void textBox3_Enter(object sender, EventArgs e)
+        {
+
+
+            if (textBox3.Text == "Contraseña")
+            {
+                textBox3.Text = "";
+                textBox3.ForeColor = Color.LightGray;
+            }
+         
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                textBox1.Text = "Usuario";
+                textBox1.ForeColor = Color.Silver;
+            }
+        }
     }
-}
+    }
+
 #endregion
