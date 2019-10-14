@@ -62,11 +62,11 @@ namespace Gestion_de_alumnos
             {
                 MessageBox.Show("tipo no espesificado.","Presione ok para redirigir", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "")
+            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
             {
                 TablaPersona.Rows.Add();
                 LlenaRegistroTabla();
-                txtusuario.Focus();
+                txtusuario1.Focus();
                 TablaPersona.WriteXml(NombreArchivo);
                 MessageBox.Show("Usuario creado con exito.",
       "Presione ok para redirigir", MessageBoxButtons.OK,
@@ -80,7 +80,7 @@ namespace Gestion_de_alumnos
         private void LlenaRegistroTabla()
         {
 
-            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["usuario"] = txtusuario.Text;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["usuario"] = txtusuario1.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["contraseña"] = textcontraseña.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["email"] = textemail.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["tipo"] = comboBox1.Text;
@@ -94,11 +94,11 @@ namespace Gestion_de_alumnos
         private void btnlogin_Click(object sender, EventArgs e)
         {
 
-            if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "")
+            if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
             {
                 TablaPersona.Rows.Add();
                 LlenaRegistroTabla();
-                txtusuario.Focus();
+                txtusuario1.Focus();
                 TablaPersona.WriteXml(NombreArchivo);
                 MessageBox.Show("Usuario creado con exito.",
       "Presione ok para redirigir", MessageBoxButtons.OK,
@@ -107,11 +107,11 @@ namespace Gestion_de_alumnos
                 Login frm = new Login();
                 frm.Show();
             }
-            else if (textemail.Text != "Email" && comboBox1.Text != "" && txtusuario.Text != "Usuario" && textcontraseña.Text != "contraseña")
+            else if (textemail.Text != "Email" && comboBox1.Text != "" && txtusuario1.Text != "Usuario" && textcontraseña.Text != "contraseña")
             {
                 TablaPersona.Rows.Add();
                 LlenaRegistroTabla();
-                txtusuario.Focus();
+                txtusuario1.Focus();
                 TablaPersona.WriteXml(NombreArchivo);
                 MessageBox.Show("Usuario creado con exito.",
       "Presione ok para redirigir", MessageBoxButtons.OK,
@@ -138,25 +138,7 @@ namespace Gestion_de_alumnos
             Application.Exit();
         }
 
-        private void txtusuario_Enter(object sender, EventArgs e)
-        {
-           if (txtusuario.Text == "Usuario")
-            {
-                txtusuario.Text = "";
-                txtusuario.ForeColor = Color.LightGray;
-
-            }
-        }
-
-        private void txtusuario_Leave(object sender, EventArgs e)
-        {
-            if (txtusuario.Text == "")
-            {
-                txtusuario.Text = "Usuario";
-                txtusuario.ForeColor = Color.Silver;
-
-            }
-        }
+       
 
         private void txtcontraseña_Enter(object sender, EventArgs e)
         {
@@ -201,6 +183,30 @@ namespace Gestion_de_alumnos
         private void textcontraseña_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtusuario1_Enter(object sender, EventArgs e)
+        {
+            if (txtusuario1.Text == "Usuario")
+            {
+                txtusuario1.Text = "";
+                txtusuario1.ForeColor = Color.LightGray;
+
+            }
+        }
+
+       
+           
+
+        private void txtusuario1_Leave(object sender, EventArgs e)
+        {
+            if (txtusuario1.Text == "")
+            {
+                txtusuario1.Text = "Usuario";
+                txtusuario1.ForeColor = Color.Silver;
+
+
+            }
         }
     }
    

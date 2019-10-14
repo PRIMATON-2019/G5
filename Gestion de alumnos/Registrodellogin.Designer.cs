@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
             this.textcontraseña = new System.Windows.Forms.TextBox();
-            this.txtusuario = new System.Windows.Forms.TextBox();
             this.textemail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -46,6 +45,7 @@
             this.btnminimizar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncerrar = new System.Windows.Forms.PictureBox();
+            this.txtusuario1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,21 +69,6 @@
             this.textcontraseña.TextChanged += new System.EventHandler(this.textcontraseña_TextChanged);
             this.textcontraseña.Enter += new System.EventHandler(this.txtcontraseña_Enter);
             this.textcontraseña.Leave += new System.EventHandler(this.txtcontraseña_Leave);
-            // 
-            // txtusuario
-            // 
-            this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.txtusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtusuario.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtusuario.ForeColor = System.Drawing.Color.Silver;
-            this.txtusuario.Location = new System.Drawing.Point(33, 39);
-            this.txtusuario.Multiline = true;
-            this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(352, 35);
-            this.txtusuario.TabIndex = 10;
-            this.txtusuario.Text = "Usuario";
-            this.txtusuario.Enter += new System.EventHandler(this.txtusuario_Enter);
-            this.txtusuario.Leave += new System.EventHandler(this.txtusuario_Leave);
             // 
             // textemail
             // 
@@ -274,17 +259,33 @@
             this.btncerrar.UseWaitCursor = true;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
             // 
+            // txtusuario1
+            // 
+            this.txtusuario1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.txtusuario1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtusuario1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txtusuario1.ForeColor = System.Drawing.Color.Silver;
+            this.txtusuario1.Location = new System.Drawing.Point(33, 40);
+            this.txtusuario1.Multiline = true;
+            this.txtusuario1.Name = "txtusuario1";
+            this.txtusuario1.Size = new System.Drawing.Size(352, 35);
+            this.txtusuario1.TabIndex = 42;
+            this.txtusuario1.Text = "Usuario";
+            this.txtusuario1.Enter += new System.EventHandler(this.txtusuario1_Enter);
+            this.txtusuario1.Leave += new System.EventHandler(this.txtusuario1_Leave);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(780, 344);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtusuario1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -292,7 +293,6 @@
             this.Controls.Add(this.label8);
             this.Controls.Add(this.textemail);
             this.Controls.Add(this.textcontraseña);
-            this.Controls.Add(this.txtusuario);
             this.Controls.Add(this.textBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -316,7 +316,6 @@
 
         #endregion
         private System.Windows.Forms.TextBox textcontraseña;
-        private System.Windows.Forms.TextBox txtusuario;
         private System.Windows.Forms.TextBox textemail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -332,5 +331,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox btnminimizar;
         private System.Windows.Forms.PictureBox btncerrar;
+        private System.Windows.Forms.TextBox txtusuario1;
     }
 }
