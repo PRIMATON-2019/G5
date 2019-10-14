@@ -66,29 +66,63 @@ namespace Gestion_de_alumnos
         private void button1_Click_1(object sender, EventArgs e)
         {
             frm.TablaPersona.ReadXml(NombreArchivo);
+
+
+
+
+
+
             for (int i = 0; i < frm.TablaPersona.Rows.Count; i++)
             {
                 if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox2.Text == frm.TablaPersona.Rows[i][1].ToString())
                 {
-                    MessageBox.Show("Bienvenido ", caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
-                    Barra_de_cargacs frm2 = new Barra_de_cargacs();
-                    this.Hide();
-                    frm2.Show();
+
+                    string alumno = "";
+                    alumno = frm.TablaPersona.Rows[i][3].ToString();
+             
+
+
+                    if (alumno == "Alumno")
+                    {
+                        alumno = textBox3.Text;
+                        MessageBox.Show("Bienvenido "  + textBox1.Text,   caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+
+                        FormInc f2 = new FormInc();
+
+                        //pones la instancia y te apareceran los campos que desees mandar 
+                        f2.label1.Text = textBox1.Text;
+                        f2.label2.Text = " Alumno";
+
+                        //muestras el formulario al que se enviaron los datos
+                        this.Hide();
+                        f2.Show();
+                    }
+                    else 
+                {
+
+                        MessageBox.Show("Bienvenido " + textBox1.Text, caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+
+                        FormInc f2 = new FormInc();
+
+                        //pones la instancia y te apareceran los campos que desees mandar 
+                        f2.label1.Text = textBox1.Text;
+                        f2.label2.Text = " Profesor";
+
+                        //muestras el formulario al que se enviaron los datos
+                        this.Hide();
+                        f2.Show();
+
+                    }
+                   
                     break;
                 }
-                else
+                else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox2.Text != frm.TablaPersona.Rows[i][1].ToString())
                 {
                     MessageBox.Show("Datos Incorrectos",caption:"Error de inicio de sesion",MessageBoxButtons.OK);
                 }
             }
             
-            //if ((textBox1.Text== "Nombre") && textBox2.Text == "Nombre") { 
-            //this.Hide();
-            //Barra_de_cargacs frm = new Barra_de_cargacs();
-            //frm.Show();
-            //}
-            //else
-            //      MessageBox.Show("Datos incorrectos");
+         
 
         }
 
