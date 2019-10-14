@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>474, 6</value>
+    <value>162, 69</value>
   </data>
   <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 21</value>
@@ -147,7 +147,7 @@
     <value>Impact, 12pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>434, 7</value>
+    <value>10, 69</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 20</value>
@@ -171,7 +171,7 @@
     <value>22</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 96</value>
+    <value>162, 96</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -714,7 +714,7 @@
     <value>1</value>
   </data>
   <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 157</value>
+    <value>162, 157</value>
   </data>
   <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>

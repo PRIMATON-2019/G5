@@ -61,7 +61,7 @@ namespace Gestion_de_alumnos
             }
             else
             {
-                MessageBox.Show( "El unico campo vacio admitido es 'Telefono Fijo'", caption:"Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show( "No se admiten campos vacios", caption:"Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }        
     }

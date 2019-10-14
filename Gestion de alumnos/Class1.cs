@@ -57,12 +57,5 @@ namespace Gestion_de_alumnos
             }
             return Verificar;
         }
-        //public int AgregarAlumno(String NombreyApellido, DateTime FechaDeNacimiento, Int32 Edad, Int32 Dni, String Domicilio, String Localidad, Int32 Telefono, String EMail, Int32 TelefonoFijo, String Sexo)
-        //{
-        //    int Valor = 0;
-        //    TablaAlumnos.Rows.Add();
-            
-        //    return Valor;
-        //}
     }
 }

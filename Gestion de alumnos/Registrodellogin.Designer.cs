@@ -44,6 +44,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,7 +79,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(443, 562);
+            this.button1.Location = new System.Drawing.Point(443, 620);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 41);
             this.button1.TabIndex = 12;
@@ -222,12 +224,45 @@
             this.textBox3.Size = new System.Drawing.Size(232, 10);
             this.textBox3.TabIndex = 25;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.IntegralHeight = false;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Matematica y Logica",
+            "Sistema y Organizaciones",
+            "Lengua y Comunicacion",
+            "Arquitectura de las Pc",
+            "Ingles",
+            "Programacion"});
+            this.comboBox2.Location = new System.Drawing.Point(393, 555);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.comboBox2.Size = new System.Drawing.Size(232, 32);
+            this.comboBox2.TabIndex = 27;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.label9.Location = new System.Drawing.Point(396, 537);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(142, 15);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Materia que se dicta";
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(932, 676);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -269,5 +304,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -36,13 +36,10 @@ namespace Gestion_de_alumnos
         private void ConfiguracionInicial()
         {
             // diseño de la TablaPersona
-            frm.TablaPersona.Columns.Add("Nombre");
+            frm.TablaPersona.Columns.Add("Usuario");
             frm.TablaPersona.Columns.Add("Contraseña");
-            frm.TablaPersona.Columns.Add("DNI");
-            frm.TablaPersona.Columns.Add("Edad");
-            frm.TablaPersona.Rows.Add();
-            frm.TablaPersona.Rows.Add();
-            frm.TablaPersona.Rows.Add();
+            frm.TablaPersona.Columns.Add("Email");
+            frm.TablaPersona.Columns.Add("Tipo");
             // busca si el archivo ya existe para precargar sus datos
             if (System.IO.File.Exists(NombreArchivo))
             {
@@ -66,9 +63,10 @@ namespace Gestion_de_alumnos
         private void button1_Click_1(object sender, EventArgs e)
         {
             frm.TablaPersona.ReadXml(NombreArchivo);
+            frm.TablaPersona.Rows.Add();
             for (int i = 0; i < frm.TablaPersona.Rows.Count; i++)
             {
-                if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox2.Text == frm.TablaPersona.Rows[i][1].ToString())
+                if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox2.Text == frm.TablaPersona.Rows[i][1].ToString() && comboBox2.Text == frm.TablaPersona.Rows[i][4].ToString())
                 {
                     MessageBox.Show("Bienvenido ", caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
                     Barra_de_cargacs frm2 = new Barra_de_cargacs();

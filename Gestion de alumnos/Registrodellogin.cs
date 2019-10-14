@@ -41,6 +41,7 @@ namespace Gestion_de_alumnos
             TablaPersona.Columns.Add("contraseña");
             TablaPersona.Columns.Add("email");
             TablaPersona.Columns.Add("tipo");
+            TablaPersona.Columns.Add("Materia que se dicta");
 
 
             // busca si el archivo ya existe para precargar sus datos
@@ -58,19 +59,17 @@ namespace Gestion_de_alumnos
         }
         private void Button1_Click_1( object sender, EventArgs e )
         {
-            if (comboBox1.Text == "")
+            if (comboBox1.Text == "" | comboBox2.Text == "")
             {
-                MessageBox.Show("tipo no espesificado.","Presione ok para redirigir", MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Tipo o Materia no valido","Presione ok para continuar", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
-            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "")
+            else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario.Text != "" && textcontraseña.Text != "" && comboBox2.Text != "")
             {
                 TablaPersona.Rows.Add();
                 LlenaRegistroTabla();
                 txtusuario.Focus();
                 TablaPersona.WriteXml(NombreArchivo);
-                MessageBox.Show("Usuario creado con exito.",
-      "Presione ok para redirigir", MessageBoxButtons.OK,
-          MessageBoxIcon.Information);
+                MessageBox.Show("Usuario creado con exito.","Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 Login frm = new Login();
                 frm.Show();
@@ -84,6 +83,7 @@ namespace Gestion_de_alumnos
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["contraseña"] = textcontraseña.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["email"] = textemail.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["tipo"] = comboBox1.Text;
+            TablaPersona.Rows[TablaPersona.Rows.Count - 1]["Materia que se dicta"] = comboBox2.Text;
         }
     }
 }

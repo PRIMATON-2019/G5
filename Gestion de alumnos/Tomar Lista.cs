@@ -12,8 +12,9 @@ namespace Gestion_de_alumnos
 {
     public partial class Form5 : Form
     {
-        public System.Data.DataTable TablaAlumnos = new DataTable("TablaAlumnos");
-        private const string Name = @"Base de Datos.xml";
+        DataTable Tomarlista = new DataTable();
+        Form3 frm = new Form3();
+        private const string Name = @"Alumnos.xml";
         public Form5()
         {
             InitializeComponent();
@@ -21,17 +22,18 @@ namespace Gestion_de_alumnos
         }
         public void Precarga()
         {
+            Tomarlista.Columns.Add();
+            Tomarlista.Columns.Add();
             if (System.IO.File.Exists(Name))
             {
-                TablaAlumnos.ReadXml(Name);
+                Tomarlista.ReadXml(Name);
             }
-            TablaAlumnos.Columns.Add("Nombre");
-            TablaAlumnos.Columns.Add("DNI");
-        }
-
-        private void Button1_Click( object sender, EventArgs e )
-        {
-            TablaAlumnos.WriteXml(Name);
+            else
+            {
+                MessageBox.Show("No existen alumnos para tomar lista",caption:"No se encontraron datos",MessageBoxButtons.OK);
+                frm.Show();
+                this.Hide();
+            }
         }
     }
 }
