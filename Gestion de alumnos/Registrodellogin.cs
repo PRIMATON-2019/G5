@@ -107,48 +107,59 @@ namespace Gestion_de_alumnos
                     MessageBox.Show("Usuario ya existe.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 }
+                
+                else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
+                {
+
+                    TablaPersona.Rows.Add();
+                    LlenaRegistroTabla();
+                    txtusuario1.Focus();
+                    TablaPersona.WriteXml(NombreArchivo);
+                    MessageBox.Show("Usuario creado con exito.",
+          "Presione ok para redirigir", MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+                    this.Hide();
+                    Login frm = new Login();
+                    frm.Show();
+
+
+                }
+
+
+               else if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
+                {
+                    TablaPersona.Rows.Add();
+                    LlenaRegistroTabla();
+                    txtusuario1.Focus();
+                    TablaPersona.WriteXml(NombreArchivo);
+                    MessageBox.Show("Usuario creado con exito.",
+          "Presione ok para redirigir", MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+                    this.Hide();
+                    Login frm = new Login();
+                    frm.Show();
+                }
+                else if (textemail.Text != "Email" && comboBox1.Text != "" && txtusuario1.Text != "Usuario" && textcontraseña.Text != "contraseña")
+                {
+                    TablaPersona.Rows.Add();
+                    LlenaRegistroTabla();
+                    txtusuario1.Focus();
+                    TablaPersona.WriteXml(NombreArchivo);
+                    MessageBox.Show("Usuario creado con exito.",
+          "Presione ok para redirigir", MessageBoxButtons.OK,
+              MessageBoxIcon.Information);
+                    this.Hide();
+                    Login frm = new Login();
+                    frm.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Complete todos los campos.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
                 break;
             }
 
-                    if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
-            {
-
-
-
-
-            }
-
-
-                if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
-            {
-                TablaPersona.Rows.Add();
-                LlenaRegistroTabla();
-                txtusuario1.Focus();
-                TablaPersona.WriteXml(NombreArchivo);
-                MessageBox.Show("Usuario creado con exito.",
-      "Presione ok para redirigir", MessageBoxButtons.OK,
-          MessageBoxIcon.Information);
-                this.Hide();
-                Login frm = new Login();
-                frm.Show();
-            }
-            else if (textemail.Text != "Email" && comboBox1.Text != "" && txtusuario1.Text != "Usuario" && textcontraseña.Text != "contraseña")
-            {
-                TablaPersona.Rows.Add();
-                LlenaRegistroTabla();
-                txtusuario1.Focus();
-                TablaPersona.WriteXml(NombreArchivo);
-                MessageBox.Show("Usuario creado con exito.",
-      "Presione ok para redirigir", MessageBoxButtons.OK,
-          MessageBoxIcon.Information);
-                this.Hide();
-                Login frm = new Login();
-                frm.Show();
-            }
-           else 
-            {
-                MessageBox.Show("Complete todos los campos.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+                   
           
         }
         private void btnminimizar_Click(object sender, EventArgs e)
