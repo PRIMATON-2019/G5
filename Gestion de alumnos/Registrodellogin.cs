@@ -93,8 +93,33 @@ namespace Gestion_de_alumnos
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+            TablaPersona.ReadXml(NombreArchivo);
 
-            if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
+
+
+
+
+
+            for (int i = 0; i < TablaPersona.Rows.Count; i++)
+            {
+                if (txtusuario1.Text == TablaPersona.Rows[i][0].ToString())
+                {
+                    MessageBox.Show("Usuario ya existe.", "Presione ok para redirigir", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                }
+                break;
+            }
+
+                    if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
+            {
+
+
+
+
+            }
+
+
+                if (textemail.Text != "" && comboBox1.Text != "" && txtusuario1.Text != "" && textcontraseña.Text != "")
             {
                 TablaPersona.Rows.Add();
                 LlenaRegistroTabla();
