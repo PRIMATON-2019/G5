@@ -35,5 +35,10 @@ namespace Gestion_de_alumnos
                 this.Hide();
             }
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
