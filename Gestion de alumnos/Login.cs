@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Gestion_de_alumnos
 {
-    
+
     public partial class Login : Form
     {
         #region PROPIEDADES PRIVADAS
@@ -61,11 +61,11 @@ namespace Gestion_de_alumnos
         {
             InitializeComponent();
             ConfiguracionInicial();
-            
+
         }
         private void button4_Click_1(object sender, EventArgs e)
         {
-          
+
 
         }
 
@@ -78,9 +78,9 @@ namespace Gestion_de_alumnos
         {
             this.WindowState = FormWindowState.Minimized;
         }
-        private void Label4_MouseClick( object sender, MouseEventArgs e )
+        private void Label4_MouseClick(object sender, MouseEventArgs e)
         {
-        
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -102,35 +102,54 @@ namespace Gestion_de_alumnos
                 if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text == frm.TablaPersona.Rows[i][1].ToString())
                 {
 
-                    string alumno = "";
-                    alumno = frm.TablaPersona.Rows[i][3].ToString();
+                    string tipo = "";
+                    tipo = frm.TablaPersona.Rows[i][3].ToString();
 
 
-                    if (alumno == "Alumno")
+                    if (tipo == "Alumno")
                     {
 
-                        MessageBox.Show("Bienvenido " + textBox1.Text, caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+                        MessageBox.Show("No tienes permiso para acceder a esta seccion " + textBox1.Text, caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+
+
+/*
+                        perfil inicio = new perfil();
+                        inicio.label1.Text = textBox1.Text;
+
 
                         FormInc f2 = new FormInc();
 
                         //pones la instancia y te apareceran los campos que desees mandar 
                         f2.label1.Text = textBox1.Text;
+                        f2.label4.Text ="alumno";
                         f2.label2.Text = " Alumno";
 
+
+                        f2.contraseña.Text = frm.TablaPersona.Rows[i][1].ToString();
+                        f2.email.Text = frm.TablaPersona.Rows[i][2].ToString(); 
+                       
                         //muestras el formulario al que se enviaron los datos
                         this.Hide();
                         f2.Show();
+
+
+                        */
                     }
-                    else
+
+
+                 if  (tipo != "Alumno")
                     {
 
-                        MessageBox.Show("Bienvenido " + textBox1.Text, caption: "Inicio de sesion correcto", MessageBoxButtons.OK);
+                       
 
+                       
+                       
                         FormInc f2 = new FormInc();
 
                         //pones la instancia y te apareceran los campos que desees mandar 
                         f2.label1.Text = textBox1.Text;
                         f2.label2.Text = " Profesor";
+                        f2.label4.Text = "profesor";
 
                         //muestras el formulario al que se enviaron los datos
                         this.Hide();
@@ -138,30 +157,30 @@ namespace Gestion_de_alumnos
 
                     }
 
-                   
+
+
+                    /* else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString())
+                     {
+                         MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
+                     }
+
+                     else if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString())
+                     {
+
+                         MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
+
+                     }
+                     else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text == frm.TablaPersona.Rows[i][1].ToString())
+                     {
+
+                         MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
+
+                     }*/
+
+                    break;
                 }
-                else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString())
-                {
-                    MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
-                }
 
-                else if (textBox1.Text == frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString())
-                {
-
-                    MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
-
-                }
-                else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text == frm.TablaPersona.Rows[i][1].ToString())
-                {
-
-                    MessageBox.Show("Datos Incorrectos", caption: "Error de inicio de sesion", MessageBoxButtons.OK);
-
-                }
-
-                break;
             }
-
-
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -179,9 +198,9 @@ namespace Gestion_de_alumnos
                 textBox1.ForeColor = Color.LightGray;
             }
         }
-      
-       
-        
+
+
+
 
         private void textBox3_Leave(object sender, EventArgs e)
         {
@@ -203,7 +222,7 @@ namespace Gestion_de_alumnos
                 textBox3.ForeColor = Color.LightGray;
                 textBox3.UseSystemPasswordChar = true;
             }
-         
+
         }
 
         private void textBox1_Leave(object sender, EventArgs e)
@@ -212,7 +231,7 @@ namespace Gestion_de_alumnos
             {
                 textBox1.Text = "Usuario";
                 textBox1.ForeColor = Color.Silver;
-              
+
             }
         }
 
@@ -236,6 +255,6 @@ namespace Gestion_de_alumnos
 
         }
     }
-    }
+}
 
 #endregion

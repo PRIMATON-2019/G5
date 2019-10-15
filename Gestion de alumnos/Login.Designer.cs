@@ -272,13 +272,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox btnminimizar;
         private System.Windows.Forms.PictureBox btncerrar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.TextBox textBox1;
     }
 }
 

@@ -81,7 +81,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Form5";
+            
             this.Text = "Tomar lista";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
