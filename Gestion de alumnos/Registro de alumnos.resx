@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="comboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 69</value>
+    <value>162, 12</value>
   </data>
   <data name="comboBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 21</value>
@@ -138,7 +138,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;comboBox2.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>29</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -146,17 +146,21 @@
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Impact, 12pt</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 69</value>
+    <value>11, 15</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 20</value>
+    <value>136, 20</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>AÑO</value>
+    <value>Año que va a cursar</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -168,10 +172,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>28</value>
   </data>
   <data name="textBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 96</value>
+    <value>162, 39</value>
   </data>
   <data name="textBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -189,10 +193,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox1.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>27</value>
   </data>
   <data name="textBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 220</value>
+    <value>162, 89</value>
   </data>
   <data name="textBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -210,10 +214,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox3.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>26</value>
   </data>
   <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 278</value>
+    <value>162, 115</value>
   </data>
   <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -231,10 +235,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox4.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>25</value>
   </data>
   <data name="textBox5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 328</value>
+    <value>497, 38</value>
   </data>
   <data name="textBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -252,10 +256,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox5.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>24</value>
   </data>
   <data name="textBox6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 99</value>
+    <value>497, 64</value>
   </data>
   <data name="textBox6.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -273,10 +277,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox6.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>23</value>
   </data>
   <data name="textBox7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 157</value>
+    <value>497, 90</value>
   </data>
   <data name="textBox7.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -294,10 +298,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox7.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>22</value>
   </data>
   <data name="textBox8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 213</value>
+    <value>497, 116</value>
   </data>
   <data name="textBox8.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -315,10 +319,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox8.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>21</value>
   </data>
   <data name="textBox9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 275</value>
+    <value>162, 141</value>
   </data>
   <data name="textBox9.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -336,10 +340,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox9.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>20</value>
   </data>
   <data name="textBox10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>511, 326</value>
+    <value>497, 12</value>
   </data>
   <data name="textBox10.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 20</value>
@@ -357,7 +361,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;textBox10.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>19</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -365,8 +369,11 @@
   <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 99</value>
+    <value>12, 41</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>133, 18</value>
@@ -387,7 +394,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>18</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -395,8 +402,11 @@
   <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 157</value>
+    <value>12, 63</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 18</value>
@@ -417,7 +427,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>17</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -425,8 +435,11 @@
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 220</value>
+    <value>12, 90</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 18</value>
@@ -447,7 +460,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>16</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -455,8 +468,11 @@
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 328</value>
+    <value>411, 43</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 18</value>
@@ -477,7 +493,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>15</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -485,8 +501,11 @@
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 278</value>
+    <value>12, 115</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 18</value>
@@ -507,7 +526,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>14</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -515,8 +534,11 @@
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 156</value>
+    <value>411, 95</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>67, 18</value>
@@ -537,7 +559,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>13</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -545,8 +567,11 @@
   <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 97</value>
+    <value>411, 71</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>73, 18</value>
@@ -567,7 +592,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>12</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -575,8 +600,11 @@
   <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>435, 328</value>
+    <value>413, 15</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>57, 18</value>
@@ -597,7 +625,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>11</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -605,8 +633,11 @@
   <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 277</value>
+    <value>12, 141</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 18</value>
@@ -627,7 +658,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>10</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -635,8 +666,11 @@
   <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
     <value>Gill Sans Ultra Bold, 8.25pt</value>
   </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>433, 215</value>
+    <value>411, 121</value>
   </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>50, 18</value>
@@ -657,64 +691,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="button2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Gill Sans Ultra Bold, 8.25pt</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 364</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 55</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Volver</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Gill Sans Ultra Bold, 8.25pt</value>
-  </data>
-  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 364</value>
-  </data>
-  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 55</value>
-  </data>
-  <data name="button3.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="button3.Text" xml:space="preserve">
-    <value>Guardar</value>
-  </data>
-  <data name="&gt;&gt;button3.Name" xml:space="preserve">
-    <value>button3</value>
-  </data>
-  <data name="&gt;&gt;button3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>9</value>
   </data>
   <data name="dateTimePicker1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 157</value>
+    <value>162, 63</value>
   </data>
   <data name="dateTimePicker1.Size" type="System.Drawing.Size, System.Drawing">
     <value>200, 20</value>
@@ -732,7 +712,330 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dateTimePicker1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Impact, 12pt</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 164</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 20</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Materias que va a cursar</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="checkBox1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 194</value>
+  </data>
+  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 17</value>
+  </data>
+  <data name="checkBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="checkBox1.Text" xml:space="preserve">
+    <value>Matematica y Logica</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Name" xml:space="preserve">
+    <value>checkBox1</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="checkBox2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>145, 194</value>
+  </data>
+  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 17</value>
+  </data>
+  <data name="checkBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>Lengua y Comunicacion</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Name" xml:space="preserve">
+    <value>checkBox2</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="checkBox3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 217</value>
+  </data>
+  <data name="checkBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>147, 17</value>
+  </data>
+  <data name="checkBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="checkBox3.Text" xml:space="preserve">
+    <value>Sistema y Organizaciones</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Name" xml:space="preserve">
+    <value>checkBox3</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="checkBox4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 240</value>
+  </data>
+  <data name="checkBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 17</value>
+  </data>
+  <data name="checkBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="checkBox4.Text" xml:space="preserve">
+    <value>Ingles</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Name" xml:space="preserve">
+    <value>checkBox4</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkBox5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 240</value>
+  </data>
+  <data name="checkBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 17</value>
+  </data>
+  <data name="checkBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="checkBox5.Text" xml:space="preserve">
+    <value>Programacion</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Name" xml:space="preserve">
+    <value>checkBox5</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="checkBox6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="checkBox6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>168, 217</value>
+  </data>
+  <data name="checkBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 17</value>
+  </data>
+  <data name="checkBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="checkBox6.Text" xml:space="preserve">
+    <value>Arquitectura de las computadoras</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Name" xml:space="preserve">
+    <value>checkBox6</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;checkBox6.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="button3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Gill Sans Ultra Bold, 8.25pt</value>
+  </data>
+  <data name="button3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 263</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>227, 247</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -741,7 +1044,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>684, 431</value>
+    <value>666, 522</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

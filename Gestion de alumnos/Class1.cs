@@ -11,10 +11,14 @@ namespace Gestion_de_alumnos
 {
     public class Class1
     {
-        public bool VerificarVacios(string Nombre, DateTime FechaDeNacimiento, Int32 Edad, Int32 Dni, string Domicilio, string Localidad, Int32 Telefono, String EMail, Int32 TelefonoFijo, string Genero)
+        public bool VerificarVacios(string Año, string Nombre, DateTime FechaDeNacimiento, Int16 Edad, Int64 Dni, string Domicilio, string Localidad, Int64 Telefono, String EMail, string Genero)
         {
             bool Verificar = false;
             int Valor = 0;
+            if (Año == "")
+            {
+                Valor++;
+            }
             if (Nombre == "")
             {
                 Valor++;

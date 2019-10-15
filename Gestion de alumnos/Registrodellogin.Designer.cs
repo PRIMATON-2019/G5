@@ -42,10 +42,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnlogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtusuario1 = new System.Windows.Forms.TextBox();
             this.btnminimizar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btncerrar = new System.Windows.Forms.PictureBox();
-            this.txtusuario1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -139,8 +139,12 @@
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.IntegralHeight = false;
             this.comboBox1.Items.AddRange(new object[] {
-            "Alumno",
-            "Profesor"});
+            "Matematica y Logica",
+            "Lengua y Comunicacion",
+            "Ingles",
+            "Programacion",
+            "Sistema y Organizaciones",
+            "Arquitectura de las Computadoras"});
             this.comboBox1.Location = new System.Drawing.Point(33, 178);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -204,7 +208,7 @@
             this.btnlogin.TabIndex = 39;
             this.btnlogin.Text = "REGISTRAR";
             this.btnlogin.UseVisualStyleBackColor = false;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            this.btnlogin.Click += new System.EventHandler(this.Btnlogin_Click);
             // 
             // panel1
             // 
@@ -219,6 +223,21 @@
             this.panel1.Size = new System.Drawing.Size(320, 344);
             this.panel1.TabIndex = 40;
             this.panel1.UseWaitCursor = true;
+            // 
+            // txtusuario1
+            // 
+            this.txtusuario1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
+            this.txtusuario1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtusuario1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.txtusuario1.ForeColor = System.Drawing.Color.Silver;
+            this.txtusuario1.Location = new System.Drawing.Point(33, 40);
+            this.txtusuario1.Multiline = true;
+            this.txtusuario1.Name = "txtusuario1";
+            this.txtusuario1.Size = new System.Drawing.Size(352, 35);
+            this.txtusuario1.TabIndex = 42;
+            this.txtusuario1.Text = "Usuario";
+            this.txtusuario1.Enter += new System.EventHandler(this.txtusuario1_Enter);
+            this.txtusuario1.Leave += new System.EventHandler(this.txtusuario1_Leave);
             // 
             // btnminimizar
             // 
@@ -259,21 +278,6 @@
             this.btncerrar.TabStop = false;
             this.btncerrar.UseWaitCursor = true;
             this.btncerrar.Click += new System.EventHandler(this.btncerrar_Click);
-            // 
-            // txtusuario1
-            // 
-            this.txtusuario1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(57)))), ((int)(((byte)(80)))));
-            this.txtusuario1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtusuario1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.txtusuario1.ForeColor = System.Drawing.Color.Silver;
-            this.txtusuario1.Location = new System.Drawing.Point(33, 40);
-            this.txtusuario1.Multiline = true;
-            this.txtusuario1.Name = "txtusuario1";
-            this.txtusuario1.Size = new System.Drawing.Size(352, 35);
-            this.txtusuario1.TabIndex = 42;
-            this.txtusuario1.Text = "Usuario";
-            this.txtusuario1.Enter += new System.EventHandler(this.txtusuario1_Enter);
-            this.txtusuario1.Leave += new System.EventHandler(this.txtusuario1_Leave);
             // 
             // Form6
             // 

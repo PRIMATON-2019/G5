@@ -12,27 +12,41 @@ namespace Gestion_de_alumnos
 {
     public partial class Form5 : Form
     {
-        DataTable Tomarlista = new DataTable();
-        Form3 frm = new Form3();
-        private const string Name = @"Alumnos.xml";
+        DataSet Tomarlista = new DataSet();
+        private const string NombreArchivo = @"Alumnos.xml";
         public Form5()
         {
             InitializeComponent();
             Precarga();
+            CargarLista();
         }
         public void Precarga()
         {
-            Tomarlista.Columns.Add();
-            Tomarlista.Columns.Add();
-            if (System.IO.File.Exists(Name))
+            if (System.IO.File.Exists(NombreArchivo))
             {
-                Tomarlista.ReadXml(Name);
+                Tomarlista.ReadXml(NombreArchivo);
             }
             else
             {
                 MessageBox.Show("No existen alumnos para tomar lista",caption:"No se encontraron datos",MessageBoxButtons.OK);
+                Form3 frm = new Form3();
                 frm.Show();
                 this.Hide();
+            }
+        }
+
+        private void Form5_Load( object sender, EventArgs e )
+        {
+            Form6 frm6 = new Form6();
+            DataTable A = new DataTable();
+            A = frm6.TablaPersona;
+            comboBox1.Text = A.Rows[0][3].ToString();
+        }
+        private void CargarLista()
+        {
+            for (int i = 0; i < Tomarlista.Tables[0].Rows.Count; i++)
+            {
+                dataGridView1.Rows.Add(Tomarlista.Tables[0].Rows[i]);
             }
         }
     }
