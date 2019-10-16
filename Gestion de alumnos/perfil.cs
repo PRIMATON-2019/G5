@@ -36,8 +36,13 @@ namespace Gestion_de_alumnos
 
             private void ConfiguracionInicial()
             {
-                // diseño de la TablaPersona
-                TablaPersona.Columns.Add("usuario");
+
+            Login inicio = new Login();
+            label1.Text = inicio.textBox1.Text;
+
+
+            // diseño de la TablaPersona
+            TablaPersona.Columns.Add("usuario");
                 TablaPersona.Columns.Add("contraseña");
                 TablaPersona.Columns.Add("email");
                 TablaPersona.Columns.Add("tipo");
@@ -90,6 +95,18 @@ namespace Gestion_de_alumnos
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["contraseña"] = textcontraseña.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["email"] = textemail.Text;
             TablaPersona.Rows[TablaPersona.Rows.Count - 1]["tipo"] = comboBox1.Text;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Login f2 = new Login();
+
+            //pones la instancia y te apareceran los campos que desees mandar 
+            label1.Text = f2.textBox1.Text;
+
+           
+
+
         }
     }
     }

@@ -43,6 +43,8 @@
             this.textcontraseña = new System.Windows.Forms.TextBox();
             this.txtusuario = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,10 +57,10 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Alumno",
             "Profesor"});
-            this.comboBox1.Location = new System.Drawing.Point(152, 375);
+            this.comboBox1.Location = new System.Drawing.Point(300, 302);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.comboBox1.Size = new System.Drawing.Size(232, 32);
+            this.comboBox1.Size = new System.Drawing.Size(295, 32);
             this.comboBox1.TabIndex = 38;
             // 
             // label5
@@ -110,7 +112,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(155, 357);
+            this.label3.Location = new System.Drawing.Point(303, 284);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 15);
             this.label3.TabIndex = 33;
@@ -122,7 +124,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(155, 294);
+            this.label4.Location = new System.Drawing.Point(303, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 15);
             this.label4.TabIndex = 32;
@@ -132,10 +134,10 @@
             // 
             this.textemail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.textemail.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textemail.Location = new System.Drawing.Point(152, 312);
+            this.textemail.Location = new System.Drawing.Point(300, 239);
             this.textemail.Multiline = true;
             this.textemail.Name = "textemail";
-            this.textemail.Size = new System.Drawing.Size(232, 35);
+            this.textemail.Size = new System.Drawing.Size(295, 35);
             this.textemail.TabIndex = 31;
             // 
             // label2
@@ -144,7 +146,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(152, 238);
+            this.label2.Location = new System.Drawing.Point(300, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 15);
             this.label2.TabIndex = 29;
@@ -156,7 +158,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(152, 175);
+            this.label1.Location = new System.Drawing.Point(300, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 15);
             this.label1.TabIndex = 28;
@@ -168,7 +170,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button1.Location = new System.Drawing.Point(443, 212);
+            this.button1.Location = new System.Drawing.Point(375, 350);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(123, 41);
             this.button1.TabIndex = 27;
@@ -182,21 +184,21 @@
             this.textcontraseña.CharacterCasing = System.Windows.Forms.CharacterCasing.Lower;
             this.textcontraseña.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textcontraseña.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.textcontraseña.Location = new System.Drawing.Point(152, 256);
+            this.textcontraseña.Location = new System.Drawing.Point(300, 183);
             this.textcontraseña.Multiline = true;
             this.textcontraseña.Name = "textcontraseña";
             this.textcontraseña.PasswordChar = '*';
-            this.textcontraseña.Size = new System.Drawing.Size(232, 35);
+            this.textcontraseña.Size = new System.Drawing.Size(295, 35);
             this.textcontraseña.TabIndex = 26;
             // 
             // txtusuario
             // 
             this.txtusuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.txtusuario.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.txtusuario.Location = new System.Drawing.Point(152, 193);
+            this.txtusuario.Location = new System.Drawing.Point(300, 120);
             this.txtusuario.Multiline = true;
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(232, 35);
+            this.txtusuario.Size = new System.Drawing.Size(295, 35);
             this.txtusuario.TabIndex = 25;
             // 
             // pictureBox2
@@ -204,18 +206,37 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Enabled = false;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(155, -73);
+            this.pictureBox2.Location = new System.Drawing.Point(31, 102);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(212, 220);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(375, 85);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 39;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(526, 44);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 40;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // perfil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
@@ -240,20 +261,21 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textemail;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textcontraseña;
-        private System.Windows.Forms.TextBox txtusuario;
+        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.TextBox textemail;
+        public System.Windows.Forms.TextBox textcontraseña;
+        public System.Windows.Forms.TextBox txtusuario;
+        public System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Label label1;
     }
 }

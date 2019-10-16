@@ -75,6 +75,20 @@ namespace Gestion_de_alumnos
         }
         private void Button6_Click( object sender, EventArgs e )
         {
+
+
+           
+
+
+
+            perfil f2 = new perfil();
+
+            //pones la instancia y te apareceran los campos que desees mandar 
+            f2.label1.Text = label1.Text;
+
+            
+
+            f2.Show();
             openChildForm(new perfil());
         }
 
@@ -84,6 +98,30 @@ namespace Gestion_de_alumnos
             this.Hide();
 
             Form4 frm = new Form4();
+
+            frm.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form7());
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+           Login frm = new Login();
 
             frm.Show();
         }
