@@ -14,6 +14,7 @@ namespace Gestion_de_alumnos
     
     public partial class Login : Form
     {
+        public string Z;
         #region PROPIEDADES PRIVADAS
         /// <summary>
         /// Path y nombre del archivo
@@ -101,7 +102,9 @@ namespace Gestion_de_alumnos
                         f2.label2.Text = " Profesor";
                         //muestras el formulario al que se enviaron los datos
                         this.Hide();
-                        f2.Show();              
+                        f2.Show();
+                    Form5 frm2 = new Form5();
+                    Z = frm.TablaPersona.Rows[i][3].ToString();
                 }
                 else if (textBox1.Text != frm.TablaPersona.Rows[i][0].ToString() && textBox3.Text != frm.TablaPersona.Rows[i][1].ToString() && comboBox1.Text != frm.TablaPersona.Rows[i][3].ToString())
                 {

@@ -18,7 +18,7 @@ namespace Gestion_de_alumnos
         {
             InitializeComponent();
             Precarga();
-            CargarLista();
+            ArmarEstructuraDatagrid();
         }
         public void Precarga()
         {
@@ -34,21 +34,91 @@ namespace Gestion_de_alumnos
                 this.Hide();
             }
         }
+        private void ArmarEstructuraDatagrid()
+        {
+            DataGridViewColumn Año = new DataGridViewColumn();
+            DataGridViewCell cell = new DataGridViewTextBoxCell();
+            Año.CellTemplate = cell;
+            Año.Name = "Año";
 
-        private void Form5_Load( object sender, EventArgs e )
+            DataGridViewColumn NombreApellido = new DataGridViewColumn();
+            DataGridViewCell cell2 = new DataGridViewTextBoxCell();
+            NombreApellido.CellTemplate = cell2;
+            NombreApellido.Name = "NombreApellido";
+
+            DataGridViewColumn Dni = new DataGridViewColumn();
+            DataGridViewCell cell3 = new DataGridViewTextBoxCell();
+            Dni.CellTemplate = cell3;
+            Dni.Name = "Dni";
+        }
+        private void Form5_Load_1( object sender, EventArgs e )
         {
             Form6 frm6 = new Form6();
             DataTable A = new DataTable();
             A = frm6.TablaPersona;
-            comboBox1.Text = A.Rows[0][3].ToString();
+            switch (textBox1.Text)
+            {
+                case "Matematica y Logica":
+                    for (int i = 0; i < frm6.TablaPersona.Rows.Count; i++)
+                    {
+                        if (textBox1.Text == A.Rows[i][3].ToString())
+                        {
+                            dataGridView1.Rows.Add(A.Rows[i]);
+                        }
+                    }
+                break;
+                case "Sistema y Organizaciones":
+                    for (int i = 0; i < frm6.TablaPersona.Rows.Count; i++)
+                    {
+                        if (textBox1.Text == A.Rows[i][3].ToString())
+                        {
+                            dataGridView1.Rows.Add(A.Rows[i]);
+                        }
+                    }
+                    break;
+                case "Arquitectura de las Computadoras":
+                    for (int i = 0; i < frm6.TablaPersona.Rows.Count; i++)
+                    {
+                        if (textBox1.Text == A.Rows[i][3].ToString())
+                        {
+                            dataGridView1.Rows.Add(A.Rows[i]);
+                        }
+                    }
+                    break;
+                case "Ingles":
+                    for (int i = 0; i < frm6.TablaPersona.Rows.Count; i++)
+                    {
+                        if (textBox1.Text == A.Rows[i][3].ToString())
+                        {
+                            dataGridView1.Rows.Add(A.Rows[i]);
+                        }
+                    }
+                    break;
+                case "Programacion":
+                    for (int i = 0; i < frm6.TablaPersona.Rows.Count; i++)
+                    {
+                        if (textBox1.Text == A.Rows[i][3].ToString())
+                        {
+                            dataGridView1.Rows.Add(A.Rows[i]);
+                        }
+                    }
+                    break;
+                case "Lengua y Comunicacion":
+                    for (int i = 0; i < frm6.TablaPersona.Rows.Count; i++)
+                    {
+                        if (textBox1.Text == A.Rows[i][3].ToString())
+                        {
+                            dataGridView1.Rows.Add(A.Rows[i]);
+                        }
+                    }
+                    break;
+            }
         }
-        private void CargarLista()
+
+        private void TextBox1_TextChanged( object sender, EventArgs e )
         {
-            //dataGridView1.Columns.Add();
-            //for (int i = 0; i < Tomarlista.Tables[0].Rows.Count; i++)
-            //{
-            //    dataGridView1.Rows.Add(Tomarlista.Tables[0].Rows[i]);
-            //}
+
         }
     }
 }
+

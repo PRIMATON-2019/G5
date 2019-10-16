@@ -52,9 +52,10 @@ namespace Gestion_de_alumnos
         }
         private void Button12_Click( object sender, EventArgs e )
         {
-            Form5 frm = new Form5();
-            this.Hide();
-            frm.Show();
+            //Form5 frm = new Form5();
+            //this.Hide();
+            //frm.Show();
+            openChildForm(new Form5());
         }
         private void BtnSalir_Click( object sender, EventArgs e )
         {
@@ -77,15 +78,12 @@ namespace Gestion_de_alumnos
         {
 
 
-           
 
 
 
             perfil f2 = new perfil();
-
             //pones la instancia y te apareceran los campos que desees mandar 
             f2.label1.Text = label1.Text;
-
             
 
             f2.Show();
@@ -94,12 +92,7 @@ namespace Gestion_de_alumnos
 
         private void Button10_Click( object sender, EventArgs e )
         {
-
-            this.Hide();
-
-            Form4 frm = new Form4();
-
-            frm.Show();
+            openChildForm(new Form4());
         }
 
         private void label1_Click(object sender, EventArgs e)
