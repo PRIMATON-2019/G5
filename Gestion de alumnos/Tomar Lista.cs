@@ -44,10 +44,11 @@ namespace Gestion_de_alumnos
         }
         private void CargarLista()
         {
-            for (int i = 0; i < Tomarlista.Tables[0].Rows.Count; i++)
-            {
-                dataGridView1.Rows.Add(Tomarlista.Tables[0].Rows[i]);
-            }
+            //dataGridView1.Columns.Add();
+            //for (int i = 0; i < Tomarlista.Tables[0].Rows.Count; i++)
+            //{
+            //    dataGridView1.Rows.Add(Tomarlista.Tables[0].Rows[i]);
+            //}
         }
     }
 }
